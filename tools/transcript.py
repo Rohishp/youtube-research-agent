@@ -51,12 +51,8 @@ def get_transcript(video_id: str, max_chars: int = 8000) -> dict:
                 "error": "Transcripts are disabled for this video",
             }
         except CouldNotRetrieveTranscript as e:
-            return {
-                "video_id": video_id,
-                "transcript": None,
-                "error": f"Could not retrieve transcript: {str(e)}",
-            }
-
+            last_error = str(e)
+            continue
     # All English variants failed — try whatever language is available
     if transcript is None:
         try:

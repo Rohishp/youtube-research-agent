@@ -10,6 +10,8 @@
 #   python evals/run_evals.py              # Run all 5 niches
 #   python evals/run_evals.py --smoke      # Run 1 niche (fast check)
 
+from dotenv import load_dotenv
+load_dotenv()   
 import json
 import sys
 import os
@@ -189,8 +191,8 @@ def main():
     )
     args = parser.parse_args()
 
-    if not os.getenv("ANTHROPIC_API_KEY") or not os.getenv("YOUTUBE_API_KEY"):
-        print("Error: Set ANTHROPIC_API_KEY and YOUTUBE_API_KEY environment variables")
+    if not os.getenv("OPENAI_API_KEY") or not os.getenv("YOUTUBE_API_KEY"):
+        print("Error: Set OPENAI_API_KEY and YOUTUBE_API_KEY environment variables")
         sys.exit(1)
 
     niches = [SMOKE_TEST_NICHE] if args.smoke else TEST_NICHES
