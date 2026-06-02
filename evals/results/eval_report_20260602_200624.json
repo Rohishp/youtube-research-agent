@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-06-02T20:06:24.914932",
+  "total_niches": 1,
+  "passed": 1,
+  "failed": 0,
+  "pass_rate": "100%",
+  "results": [
+    {
+      "niche": "morning routines for entrepreneurs",
+      "status": "completed",
+      "score": {
+        "total": 9,
+        "max": 10,
+        "breakdown": {
+          "completeness": 2,
+          "specificity": 1,
+          "opportunity_score_quality": 2,
+          "actionability": 2,
+          "niche_relevance": 2
+        },
+        "grade": "PASS"
+      },
+      "opportunity_score": 8,
+      "gaps_found": 3,
+      "ideas_generated": 3
+    }
+  ]
+}

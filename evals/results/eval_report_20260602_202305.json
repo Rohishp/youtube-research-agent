@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-06-02T20:23:05.783150",
+  "total_niches": 5,
+  "passed": 4,
+  "failed": 1,
+  "pass_rate": "80%",
+  "results": [
+    {
+      "niche": "morning routines for entrepreneurs",
+      "status": "completed",
+      "score": {
+        "total": 10,
+        "max": 10,
+        "breakdown": {
+          "completeness": 2,
+          "specificity": 2,
+          "opportunity_score_quality": 2,
+          "actionability": 2,
+          "niche_relevance": 2
+        },
+        "grade": "PASS"
+      },
+      "opportunity_score": 7,
+      "gaps_found": 3,
+      "ideas_generated": 3
+    },
+    {
+      "niche": "stoic philosophy for modern life",
+      "status": "completed",
+      "score": {
+        "total": 10,
+        "max": 10,
+        "breakdown": {
+          "completeness": 2,
+          "specificity": 2,
+          "opportunity_score_quality": 2,
+          "actionability": 2,
+          "niche_relevance": 2
+        },
+        "grade": "PASS"
+      },
+      "opportunity_score": 7,
+      "gaps_found": 3,
+      "ideas_generated": 3
+    },
+    {
+      "niche": "beginner investing mistakes",
+      "status": "error",
+      "error": "Agent output was not valid JSON: Expecting value: line 1 column 1 (char 0)",
+      "score": {
+        "total": 0,
+        "grade": "FAIL"
+      }
+    },
+    {
+      "niche": "ADHD productivity tips",
+      "status": "completed",
+      "score": {
+        "total": 10,
+        "max": 10,
+        "breakdown": {
+          "completeness": 2,
+          "specificity": 2,
+          "opportunity_score_quality": 2,
+          "actionability": 2,
+          "niche_relevance": 2
+        },
+        "grade": "PASS"
+      },
+      "opportunity_score": 7,
+      "gaps_found": 3,
+      "ideas_generated": 3
+    },
+    {
+      "niche": "solo travel safety tips",
+      "status": "completed",
+      "score": {
+        "total": 10,
+        "max": 10,
+        "breakdown": {
+          "completeness": 2,
+          "specificity": 2,
+          "opportunity_score_quality": 2,
+          "actionability": 2,
+          "niche_relevance": 2
+        },
+        "grade": "PASS"
+      },
+      "opportunity_score": 7,
+      "gaps_found": 3,
+      "ideas_generated": 3
+    }
+  ]
+}
