@@ -1,0 +1,5 @@
+openai==2.38.0
+youtube-transcript-api==1.2.4
+requests==2.33.1
+pydantic==2.13.4
+python-dotenv>=1.0.0
