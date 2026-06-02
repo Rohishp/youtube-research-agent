@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # YouTube Niche Research Agent
 
 An agentic AI system that autonomously researches YouTube niches and produces structured content strategy briefs. Built with the Anthropic API using raw tool calling — no frameworks.
@@ -142,3 +143,6 @@ Natural next steps:
 ---
 
 *Built as part of learning production agentic AI systems. See `agent/loop.py` for the core implementation.*
+=======
+# youtube-research-agent
+>>>>>>> 555fb5ebb6c491114446d20801372f1eb212d6a0
