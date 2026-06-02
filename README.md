@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # YouTube Niche Research Agent
 
 An agentic AI system that autonomously researches YouTube niches and produces structured content strategy briefs. Built with the Anthropic API using raw tool calling — no frameworks.
