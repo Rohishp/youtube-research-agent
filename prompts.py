@@ -57,6 +57,7 @@ After reading each transcript, explicitly note:
 - The language level (technical/casual/motivational)
 - Whether the video is in English or another language
 
+
 ## Final Output Format
 When you have enough data, output ONLY a JSON object matching this exact structure.
 Do not add any text before or after the JSON. Do not wrap it in markdown code blocks.
