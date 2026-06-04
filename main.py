@@ -1,85 +1,125 @@
 # main.py
 #
-# Entry point. Run this from the command line:
-#   python main.py "morning routines for busy professionals"
-#   python main.py "stoic philosophy for modern life"
-#   python main.py "beginner investing mistakes"
-
-from dotenv import load_dotenv
-load_dotenv()                    # ← reads .env and loads keys into environment
+# Entry point for the full pipeline.
+#
+# Usage:
+#   python main.py "morning routines for entrepreneurs"
+#           → runs full pipeline (research + script)
+#
+#   python main.py "morning routines for entrepreneurs" --research-only
+#           → runs only the research agent, saves brief
+#
+#   python main.py "morning routines for entrepreneurs" --brief output/brief_xyz.json
+#           → skips research, uses existing brief, runs only script agent
+#           → useful when iterating on the script agent without burning API quota
 
 import json
 import sys
 import os
-from datetime import datetime
+import argparse
 from pathlib import Path
-from agent.loop import run_agent
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 def main():
-    # Get niche from command line argument
-    if len(sys.argv) < 2:
-        print("Usage: python main.py \"your niche here\"")
-        print("Example: python main.py \"morning routines for entrepreneurs\"")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(
+        description="YouTube Research + Script Writing Pipeline"
+    )
+    parser.add_argument(
+        "niche",
+        type=str,
+        help='The niche to research. Example: "morning routines for entrepreneurs"'
+    )
+    parser.add_argument(
+        "--research-only",
+        action="store_true",
+        help="Run only the research agent, skip script writing"
+    )
+    parser.add_argument(
+        "--brief",
+        type=str,
+        default=None,
+        help="Path to existing research brief JSON. Skips research, runs only script agent."
+    )
+    args = parser.parse_args()
 
-    niche = sys.argv[1]
-
-    # Validate API keys are set before starting
+    # Validate environment
     if not os.getenv("OPENAI_API_KEY"):
-        print("Error: OPENAI_API_KEY environment variable not set")
-        print("Copy .env.example to .env and add your keys")
+        print("Error: OPENAI_API_KEY not set. Check your .env file.")
         sys.exit(1)
+    if not os.getenv("YOUTUBE_API_KEY") and args.brief is None and not args.research_only is False:
+        # Only need YouTube API if we're doing research
+        pass  # Will fail gracefully inside the research agent if needed
 
-    if not os.getenv("YOUTUBE_API_KEY"):
-        print("Error: YOUTUBE_API_KEY environment variable not set")
-        sys.exit(1)
-
-    # Run the agent
     try:
-        brief = run_agent(niche)
+        # ── MODE 1: Full pipeline (default) ──────────────────────────────────
+        if not args.research_only and args.brief is None:
+            from orchestrator import run_pipeline
+            brief, script = run_pipeline(niche=args.niche)
 
-        # Save output to disk
-        output_dir = Path("output")
-        output_dir.mkdir(exist_ok=True)
+        # ── MODE 2: Research only ─────────────────────────────────────────────
+        elif args.research_only:
+            from agent.loop import run_agent
+            from datetime import datetime
+            import json
 
-        # Create a filename from the niche and timestamp
-        safe_niche = niche.lower().replace(" ", "_")[:50]
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = output_dir / f"{safe_niche}_{timestamp}.json"
+            if not os.getenv("YOUTUBE_API_KEY"):
+                print("Error: YOUTUBE_API_KEY not set. Required for research agent.")
+                sys.exit(1)
 
-        # Save the structured brief
-        with open(filename, "w", encoding="utf-8") as f:
-            json.dump(brief.model_dump(), f, indent=2, ensure_ascii=False)
+            brief = run_agent(args.niche)
 
-        # Print summary to terminal
-        print(f"\n{'='*60}")
-        print(f"RESEARCH BRIEF: {brief.niche.upper()}")
-        print(f"{'='*60}")
-        print(f"Opportunity Score: {brief.opportunity_score}/10")
-        print(f"Reasoning: {brief.opportunity_score_reasoning}")
-        print(f"\nKey Themes:")
-        for theme in brief.key_themes:
-            print(f"  • {theme}")
-        print(f"\nContent Gaps Found: {len(brief.content_gaps)}")
-        for gap in brief.content_gaps:
-            print(f"  • {gap.gap_title} (demand: {gap.estimated_demand})")
-        print(f"\nVideo Ideas Generated: {len(brief.video_ideas)}")
-        for idea in brief.video_ideas:
-            print(f"  • {idea.title}")
-        print(f"\nSummary: {brief.summary}")
-        print(f"\nFull brief saved to: {filename}")
-        print(f"{'='*60}\n")
+            output_dir = Path("output")
+            output_dir.mkdir(exist_ok=True)
+            safe_niche = args.niche.lower().replace(" ", "_")[:40]
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            brief_path = output_dir / f"brief_{safe_niche}_{timestamp}.json"
 
-    except ValueError as e:
-        print(f"\nError parsing agent output: {e}")
-        sys.exit(1)
-    except RuntimeError as e:
-        print(f"\nAgent error: {e}")
-        sys.exit(1)
+            with open(brief_path, "w", encoding="utf-8") as f:
+                json.dump(brief.model_dump(), f, indent=2, ensure_ascii=False)
+
+            print(f"\nResearch brief saved to: {brief_path}")
+            print(f"To generate a script from this brief, run:")
+            print(f'  python main.py "{args.niche}" --brief {brief_path}')
+
+        # ── MODE 3: Script only (existing brief) ──────────────────────────────
+        elif args.brief is not None:
+            from script_agent.loop import run_script_agent
+            from models.schemas import ResearchBrief
+            from datetime import datetime
+            import json
+
+            brief_path = Path(args.brief)
+            if not brief_path.exists():
+                print(f"Error: Brief file not found: {args.brief}")
+                sys.exit(1)
+
+            with open(brief_path, encoding="utf-8") as f:
+                brief_data = json.load(f)
+            brief = ResearchBrief(**brief_data)
+
+            print(f"Loaded research brief for: {brief.niche}")
+            script = run_script_agent(brief)
+
+            output_dir = Path("output")
+            output_dir.mkdir(exist_ok=True)
+            safe_niche = args.niche.lower().replace(" ", "_")[:40]
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            script_path = output_dir / f"script_{safe_niche}_{timestamp}.json"
+
+            with open(script_path, "w", encoding="utf-8") as f:
+                json.dump(script.model_dump(), f, indent=2, ensure_ascii=False)
+
+            print(f"\nScript saved to: {script_path}")
+
     except KeyboardInterrupt:
-        print("\nInterrupted by user")
+        print("\nInterrupted.")
         sys.exit(0)
+    except Exception as e:
+        print(f"\nError: {e}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
