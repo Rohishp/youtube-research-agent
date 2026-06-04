@@ -1,0 +1,136 @@
+{
+  "niche": "stoic philosophy for modern life",
+  "opportunity_score": 8,
+  "opportunity_score_reasoning": "The niche of stoic philosophy for modern life has high engagement on existing popular videos, indicating significant interest. However, there are content gaps in applying Stoic principles to contemporary, relatable scenarios beyond historical and philosophical discussions.",
+  "top_videos_analyzed": [
+    {
+      "video_id": "EFkyxzJtiv4",
+      "title": "Stoicism: Become Undefeatable",
+      "channel_name": "Aperture",
+      "view_count": 13384314,
+      "like_count": 650937,
+      "comment_count": 8697,
+      "published_at": "2021-04-30T17:30:00Z",
+      "duration": "PT12M52S",
+      "description": "Stoicism helps us steer through past and present storms into calmer and more peaceful waters. Emphasizes acceptance and indifference as core Stoic principles."
+    },
+    {
+      "video_id": "R9OCA6UFE-0",
+      "title": "The philosophy of Stoicism - Massimo Pigliucci",
+      "channel_name": "TED-Ed",
+      "view_count": 11370998,
+      "like_count": 400005,
+      "comment_count": 4885,
+      "published_at": "2017-06-19T15:00:18Z",
+      "duration": "PT5M30S",
+      "description": "Explains the basic tenets of Stoicism, focusing on control and virtue as central concepts, inspiring thinkers across generations."
+    },
+    {
+      "video_id": "tv6W0Nv5ev0",
+      "title": "Marcus Aurelius: The Man Who Solved the Universe",
+      "channel_name": "Horses",
+      "view_count": 10620160,
+      "like_count": 423815,
+      "comment_count": 7701,
+      "published_at": "2023-02-18T15:00:37Z",
+      "duration": "PT14M11S",
+      "description": "Focuses on Marcus Aurelius’s application of Stoic principles during his reign, demonstrating leading with virtue over indulgence."
+    },
+    {
+      "video_id": "LGXRpbDuDGE",
+      "title": "When Life Hurts, Care Less About It | The Philosophy of Marcus Aurelius",
+      "channel_name": "Einzelgänger",
+      "view_count": 4616637,
+      "like_count": 138583,
+      "comment_count": 2791,
+      "published_at": "2023-01-12T15:00:20Z",
+      "duration": "PT14M8S",
+      "description": "Discusses the concept of control vs. uncontrollable elements in life and emphasizes not allowing external factors to dictate peace."
+    },
+    {
+      "video_id": "heh5XLwZVOY",
+      "title": "9 Stoic Rules For A Better Life (From Marcus Aurelius)",
+      "channel_name": "Daily Stoic",
+      "view_count": 3394883,
+      "like_count": 118975,
+      "comment_count": 1831,
+      "published_at": "2021-11-05T18:15:01Z",
+      "duration": "PT10M34S",
+      "description": "Outlines practical Stoic rules to improve daily life, encouraging personal discipline and self-awareness based on Marcus Aurelius’s teachings."
+    }
+  ],
+  "key_themes": [
+    "Control over reactions",
+    "Application of virtue",
+    "Focus on present versus past/future"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Modern, relatable applications of Stoicism",
+      "explanation": "Existing content often discusses historical figures like Marcus Aurelius but lacks direct applications for handling modern-day issues like technology addiction or workplace stress.",
+      "estimated_demand": "high",
+      "suggested_video_title": "How to Apply Stoic Philosophy to Overcome Modern Challenges"
+    },
+    {
+      "gap_title": "Practical Stoic exercises for beginners",
+      "explanation": "Many videos touch briefly on Stoicism but don't offer guided exercises or actionable steps for beginners to practice Stoicism daily.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Daily Stoic Exercises to Cultivate Calm and Resilience"
+    },
+    {
+      "gap_title": "Stoicism for different age groups",
+      "explanation": "Few existing videos consider how Stoic principles can be tailored or applied across different life stages, like adolescence versus retirement.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Stoic Lessons for Every Stage of Life"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "How to Apply Stoic Philosophy to Overcome Modern Challenges",
+      "hook": "Discover how the ancient wisdom of Stoicism can tackle your tech stress and social media anxiety today!",
+      "target_emotion": "Empowerment",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "This video fills a gap by connecting ancient philosophy directly to current technology-induced stress, appealing to a tech-savvy audience looking for mindfulness strategies."
+    },
+    {
+      "title": "Daily Stoic Exercises to Cultivate Calm and Resilience",
+      "hook": "Start your day with a Stoic mindset: practical exercises for a modern life!",
+      "target_emotion": "Calm",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Practical exercises are popular as they provide immediate action steps for viewers who want to incorporate Stoicism into their everyday routine."
+    },
+    {
+      "title": "Stoic Lessons for Every Stage of Life",
+      "hook": "Whether you're a teenager, mid-career, or retiring soon, Stoic wisdom is here to guide you!",
+      "target_emotion": "Reassurance",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Targets a wide audience by showing how Stoic wisdom can be adapted for various life stages, appealing to viewers seeking tailored self-help content."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "informative and inspirational",
+    "pacing": "moderate",
+    "visual_style": "minimalistic with emphasis on text and quotes",
+    "common_hooks": [
+      "Imagine facing life’s challenges...",
+      "What if you could steer past stress with ancient wisdom?"
+    ],
+    "words_to_use": [
+      "virtue",
+      "control"
+    ],
+    "words_to_avoid": [
+      "impossible",
+      "hopeless"
+    ]
+  },
+  "recommended_video_length": "10-15 minutes",
+  "best_upload_days": [
+    "Monday",
+    "Thursday"
+  ],
+  "summary": "The niche of stoic philosophy for modern life shows promising engagement, primarily focusing on historical teachings with room for content on modern applications, practical exercises, and adaptations across life stages. Videos exploring modern challenges, daily exercises, and life-stage adaptations can seize audience interest in actionable stoic wisdom. Aim for inspirational and informative content with moderate pacing and minimalistic visuals."
+}

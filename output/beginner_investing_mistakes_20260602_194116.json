@@ -1,0 +1,117 @@
+{
+  "niche": "beginner investing mistakes",
+  "opportunity_score": 8,
+  "opportunity_score_reasoning": "The niche has a steady demand with many views on existing videos, indicating ongoing interest. However, there is room for new perspectives and deeper analysis, especially in connecting personal finance principles with practical investing solutions.",
+  "top_videos_analyzed": [
+    {
+      "video_id": "wnhPVVCuUC0",
+      "title": "I made $100,000 avoiding this common ETF investing mistake",
+      "channel_name": "Investing Simplified - Professor G",
+      "view_count": 2013104,
+      "like_count": 27052,
+      "comment_count": 1713,
+      "published_at": "2023-12-09T14:45:05Z",
+      "duration": "PT11M44S",
+      "description": "Three mistakes keep people from getting VERY RICH in ETF investing. Warren Buffett made his fortune with this investing secret."
+    },
+    {
+      "video_id": "eFf3Yk1B1VE",
+      "title": "Investing Mistakes - Why Beginners Lose Money in the Stock Market",
+      "channel_name": "ClearValue Tax",
+      "view_count": 822960,
+      "like_count": 29463,
+      "comment_count": 2044,
+      "published_at": "2020-06-05T22:58:35Z",
+      "duration": "PT15M55S",
+      "description": "Investing mistakes to avoid in the stock market if you are a beginner or you are new to stocks."
+    },
+    {
+      "video_id": "u0sAJ1OnBKU",
+      "title": "8 Beginner Investing Mistakes I'll Never Make Again (After 10 Years of Experience)",
+      "channel_name": "Humphrey Yang",
+      "view_count": 306475,
+      "like_count": 6351,
+      "comment_count": 513,
+      "published_at": "2023-08-16T18:00:27Z",
+      "duration": "PT16M36S",
+      "description": "How to build a stock portfolio if starting all over again. Tips for beginners."
+    }
+  ],
+  "key_themes": [
+    "Asset Diversification",
+    "Avoiding High-Risk Investments",
+    "Long-Term Investment Strategies"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Integrating Personal Finance with Investment Strategies",
+      "explanation": "Most videos discuss individual investment mistakes without tying them back to broader personal finance principles.",
+      "estimated_demand": "high",
+      "suggested_video_title": "How Personal Finance Fundamentals Can Prevent Investment Disasters"
+    },
+    {
+      "gap_title": "Technological Tools for Beginner Investors",
+      "explanation": "Few videos discuss or guide on using tools and technology that can assist beginners in avoiding mistakes.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Top Apps to Avoid Investing Mistakes as a Beginner"
+    },
+    {
+      "gap_title": "Impact of Global Economic Trends on Beginner Investments",
+      "explanation": "Videos often miss connecting global economic trends to how beginners should adjust their investment strategies.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "How Global Trends Can Shape Your Investment Strategy"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "How Personal Finance Fundamentals Can Prevent Investment Disasters",
+      "hook": "Discover the unseen link between personal finance and sound investing!",
+      "target_emotion": "Enlightening",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "Bridges a common gap in existing content and appeals to a broad audience seeking both investment and personal finance knowledge."
+    },
+    {
+      "title": "Top Apps to Avoid Investing Mistakes as a Beginner",
+      "hook": "Equip yourself with the best digital tools to steer clear of rookie mistakes in investing!",
+      "target_emotion": "Empowered",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "The approach is engaging and introduces practical technology solutions, a topic not often covered extensively."
+    },
+    {
+      "title": "How Global Trends Can Shape Your Investment Strategy",
+      "hook": "Stay ahead of the curve: Learn how world events impact your portfolio!",
+      "target_emotion": "Informed",
+      "estimated_search_volume": "medium",
+      "competition_level": "medium",
+      "why_it_will_work": "Provides a fresh perspective by linking macroeconomic events to personal investment strategies, a valuable insight for audience members interested in global finance."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "Conversational and Educative",
+    "pacing": "Moderate",
+    "visual_style": "Informative graphics and real-world examples",
+    "common_hooks": [
+      "Avoid common pitfalls",
+      "Save your future self!",
+      "Learn from the pros"
+    ],
+    "words_to_use": [
+      "diversification",
+      "gradually",
+      "solid fundamentals"
+    ],
+    "words_to_avoid": [
+      "gamble",
+      "get-rich-quick",
+      "panic"
+    ]
+  },
+  "recommended_video_length": "10-15 minutes",
+  "best_upload_days": [
+    "Tuesday",
+    "Thursday"
+  ],
+  "summary": "The niche 'beginner investing mistakes' is highly relevant with vast potential for detailed, insightful content. Focus on integrating personal finance with investing, leveraging technology, and understanding global influences to address current content gaps. Videos should be clear, educational, and engaging, using conversational tones that simplify complex concepts."
+}
