@@ -1,147 +1,125 @@
-# YouTube Niche Research Agent
+# YouTube Knowledge Agent (RAG)
 
-An agentic AI system that autonomously researches YouTube niches and produces structured content strategy briefs. Built with the Anthropic API using raw tool calling — no frameworks.
+A retrieval-augmented generation agent that answers questions about YouTube content strategy using accumulated transcript knowledge. Built with OpenAI embeddings and ChromaDB — no frameworks.
 
 ## What It Does
 
-Give it a niche keyword. It will:
-
-1. **Search YouTube** for top-performing videos (YouTube Data API v3)
-2. **Read transcripts** of the most-viewed videos to understand structure and language
-3. **Identify content gaps** — topics audiences want but creators aren't covering
-4. **Generate video ideas** with hooks, target emotions, and competition analysis
-5. **Produce a structured JSON brief** you can immediately act on
-
-## Example Output
+Instead of searching YouTube fresh every time, this agent queries a local vector database of previously analyzed transcripts. Knowledge compounds — every transcript indexed makes future answers richer.
 
 ```
-RESEARCH BRIEF: MORNING ROUTINES FOR ENTREPRENEURS
-============================================================
-Opportunity Score: 7/10
-Reasoning: High search volume with established creators, but significant gaps in
-           actionable content for founders specifically (vs generic productivity)
+You: "What hooks do top stoic philosophy creators use?"
 
-Key Themes:
-  • 5am wake-up routines
-  • Deep work blocks
-  • Exercise and mental clarity
-
-Content Gaps Found: 4
-  • "Morning routines that actually work when you have a team to manage"
-  • "The $0 morning routine vs the $500 morning routine — what actually matters"
-
-Video Ideas Generated: 5
-  • "I Tested 7 CEO Morning Routines for 30 Days. Here's What Happened"
-  • "Why Your Morning Routine Is Failing (It's Not What You Think)"
+Agent:
+  → get_index_stats()          # check what's available
+  → retrieve_knowledge(...)    # semantic search, 3 different phrasings
+  → synthesize answer with cited sources and confidence level
 ```
 
-## Architecture
-
-This project demonstrates a production-grade agentic loop without relying on frameworks like LangChain. The core loop is ~60 lines of Python:
+## Real Output
 
 ```
-User Input
-    ↓
-Agent Loop (agent/loop.py)
-    ↓
-Claude API (with tool schemas)
-    ↓ ← tool_use
-Execute Tool (YouTube Search / Transcript)
-    ↓ ← tool_result
-Claude API (sees result, decides next action)
-    ↓ ← end_turn
-Parse Structured Output (Pydantic)
-    ↓
-JSON Research Brief
+ANSWER
+Creators of stoic philosophy content commonly employ personal storytelling
+as hooks. In '3 Stoic Habits I Practice Every Single Day', the creator opens
+with a challenging decade: a failed startup, a divorce, and a health scare —
+promising real-life application rather than academic discourse. Similarly,
+'Stoic Principles That Changed How I Run My Business' hooks with Marcus
+Aurelius's private journal, connecting ancient wisdom to modern entrepreneurship.
+
+KEY INSIGHTS:
+  • Personal failure stories outperform abstract philosophy as openers
+  • Historical figures (Marcus Aurelius, Seneca, Epictetus) provide credibility anchors
+  • Practical framing beats theoretical — "how I use this" over "what this means"
+
+SOURCES: 3 videos cited
+CONFIDENCE: HIGH
 ```
 
-**Why no LangChain?** Understanding the raw loop first makes you a better agent engineer. Frameworks add abstraction; this project adds understanding.
+## Why RAG
+
+Context windows have limits. You cannot paste 500 transcripts into a prompt. RAG solves this:
+1. Convert every transcript paragraph into a vector (1536 numbers encoding meaning)
+2. Store vectors in ChromaDB
+3. At query time: find only the paragraphs semantically similar to the question
+4. Send only those relevant paragraphs to the LLM
+
+Result: focused, grounded answers instead of hallucinated generalisations.
 
 ## Project Structure
 
 ```
-youtube-research-agent/
-├── main.py                  # Entry point
+youtube-rag-agent/
+├── main.py              # Ask questions
+├── ingest.py            # Load transcripts into knowledge base
 ├── agent/
-│   ├── loop.py             # The core agent loop — read this first
-│   ├── tools.py            # Tool schemas passed to the API
-│   └── prompts.py          # System prompt and user prompt builders
+│   ├── loop.py          # Agent loop — same pattern as research agent
+│   ├── tools.py         # retrieve_knowledge, retrieve_by_niche, get_index_stats
+│   └── prompts.py       # System prompt enforcing source citation
 ├── tools/
-│   ├── youtube_search.py   # YouTube Data API v3 integration
-│   └── transcript.py       # Transcript extraction
-├── models/
-│   └── schemas.py          # Pydantic models for structured output
-└── evals/
-    └── run_evals.py        # Automated eval suite across 5 niches
+│   ├── indexer.py       # Chunking + embedding + ChromaDB storage
+│   └── retriever.py     # Semantic search with similarity threshold
+└── models/schemas.py    # TranscriptChunk, KnowledgeAnswer (Pydantic)
 ```
 
 ## Setup
 
-**1. Clone and install dependencies**
 ```bash
-git clone https://github.com/YOUR_USERNAME/youtube-research-agent
-cd youtube-research-agent
+git clone https://github.com/Rohishp/youtube-rag-agent
+cd youtube-rag-agent
 pip install -r requirements.txt
-```
-
-**2. Set up API keys**
-```bash
 cp .env.example .env
-# Edit .env and add your keys
+# Add OPENAI_API_KEY to .env
 ```
 
-You need two API keys:
-- **Anthropic API key**: [console.anthropic.com](https://console.anthropic.com)
-- **YouTube Data API v3 key**: [Google Cloud Console](https://console.cloud.google.com) → Enable YouTube Data API v3 → Create credentials
-
-**3. Load environment variables**
 ```bash
-export $(cat .env | xargs)
+# Load sample data (no YouTube API needed)
+python ingest.py --sample
+
+# Check what's indexed
+python ingest.py --stats
+
+# Ask questions
+python main.py "What hooks do top morning routine creators use?"
+python main.py "What content gaps exist in stoic philosophy content?"
 ```
 
-**4. Run**
+## Connecting to the Research Agent
+
 ```bash
-python main.py "morning routines for entrepreneurs"
-python main.py "stoic philosophy for modern life"
-python main.py "beginner investing mistakes"
+# Run research agent (saves transcripts automatically)
+cd ../youtube-research-agent
+python main.py "stoic philosophy for modern life" --research-only
+
+# Feed real transcripts into knowledge base
+cd ../youtube-rag-agent
+python ingest.py --from-transcripts ../youtube-research-agent/output/transcripts/
 ```
 
-**5. Run the eval suite**
-```bash
-python evals/run_evals.py --smoke    # Quick test (1 niche)
-python evals/run_evals.py            # Full suite (5 niches)
-```
+Every research run permanently enriches the knowledge base. Run 10 niches → the agent has real knowledge about 30-50 videos to draw from.
 
 ## Key Design Decisions
 
-**Raw API over frameworks** — The agent loop in `agent/loop.py` is explicit Python. Every decision the agent makes is visible and debuggable. No magic.
+**Chunking with overlap** — Transcripts split into 500-word chunks with 50-word overlap. Overlap prevents losing context at chunk boundaries.
 
-**Pydantic for structured output** — The agent's final output is validated against a schema. If it doesn't conform, it fails loudly rather than silently returning garbage.
+**Similarity threshold** — Chunks below 0.2 cosine similarity are filtered. The agent gets nothing rather than irrelevant results.
 
-**Evals as first-class artifacts** — `evals/run_evals.py` scores output quality on 5 criteria across 5 test niches. This is how you know changes to prompts actually improve results.
+**Same loop pattern** — `agent/loop.py` is structurally identical to the research agent loop. Same while loop, same tool execution, same JSON parsing. Different tools and prompts — that's all. The loop is reusable infrastructure.
 
-**Context window awareness** — Transcripts are capped at 8,000 characters. Multiple videos × full transcripts would overflow the context window mid-task.
+**Source citation enforced** — System prompt requires every claim to cite a specific video. Confidence level is required. Prevents hallucination masquerading as insight.
 
-**Graceful tool failure** — Tools return error dicts instead of raising exceptions. The agent decides what to do when a tool fails, rather than crashing.
+## Connection to YouTube Research Agent
 
-## Extending This Project
+```
+Research Agent                    Knowledge Agent
+(youtube-research-agent)          (youtube-rag-agent)
 
-Natural next steps:
-- Add a `search_competitor_channels` tool
-- Add a `get_comment_sentiment` tool to understand audience reaction
-- Chain into a Script Writing Agent that uses this brief as input
-- Add a vector store to avoid re-researching the same niches
+Fetches live data          →      Queries accumulated knowledge
+Saves transcripts          →      Indexes into ChromaDB
+Runs per-session           →      Knowledge persists forever
+```
+
+See [youtube-research-agent](https://github.com/Rohishp/youtube-research-agent) for the companion project.
 
 ## Tech Stack
 
-- **Anthropic API** — claude-sonnet-4 with tool calling
-- **YouTube Data API v3** — video search and metadata
-- **youtube-transcript-api** — transcript extraction
-- **Pydantic v2** — structured output validation
-
----
-
-*Built as part of learning production agentic AI systems. See `agent/loop.py` for the core implementation.*
-=======
-# youtube-research-agent
-
+OpenAI API (gpt-4o, text-embedding-3-small) · ChromaDB 0.5+ · Pydantic v2
