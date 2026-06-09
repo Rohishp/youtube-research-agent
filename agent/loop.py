@@ -27,6 +27,7 @@ from agent.tools import TOOL_SCHEMAS
 from agent.prompts import SYSTEM_PROMPT, build_user_prompt
 from tools.youtube_search import search_youtube
 from tools.transcript import get_transcript
+from tools.transcript_store import save_transcript   # ← NEW
 from models.schemas import ResearchBrief
 
 
@@ -40,41 +41,6 @@ MODEL = "gpt-4o"
 client = OpenAI()
 
 
-def execute_tool(tool_name: str, tool_input: dict) -> str:
-    """
-    Route a tool call to the correct Python function and return the result as a string.
-
-    Why return a string? Because the OpenAI API expects tool results as text content.
-    We serialize the result to JSON so it's structured and readable by the model.
-
-    If a tool fails, we return an error message instead of raising an exception.
-    This is important: we want the AGENT to decide what to do when a tool fails,
-    not have the whole program crash.
-    """
-    print(f"  → Calling tool: {tool_name}({json.dumps(tool_input, indent=2)})")
-
-    try:
-        if tool_name == "search_youtube":
-            result = search_youtube(
-                query=tool_input["query"],
-                max_results=tool_input.get("max_results", 10)
-            )
-        elif tool_name == "get_transcript":
-            result = get_transcript(video_id=tool_input["video_id"])
-        else:
-            result = {"error": f"Unknown tool: {tool_name}"}
-
-        result_str = json.dumps(result, ensure_ascii=False)
-
-        preview = result_str[:200] + "..." if len(result_str) > 200 else result_str
-        print(f"  ← Tool result preview: {preview}")
-
-        return result_str
-
-    except Exception as e:
-        error_msg = f"Tool execution failed: {str(e)}"
-        print(f"  ✗ {error_msg}")
-        return json.dumps({"error": error_msg})
 
 
 def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
@@ -99,6 +65,51 @@ def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
     print(f"\n{'='*60}")
     print(f"Starting research agent for niche: '{niche}'")
     print(f"{'='*60}\n")
+
+    # Normalise niche name once — used when saving transcripts so the
+    # RAG agent receives a clean niche label instead of a video ID.
+    # e.g. "Stoic Philosophy for Modern Life" → "stoic_philosophy_for_modern_life"
+    normalised_niche = niche.lower().replace(" ", "_")
+
+    # ── INNER TOOL EXECUTOR ───────────────────────────────────────────────────
+    # Defined as a closure inside run_agent so it can access normalised_niche
+    # without us having to pass it as an argument on every call.
+    #
+    # Why a closure instead of a module-level function?
+    # The module-level execute_tool() doesn't know which niche is being researched.
+    # By defining it here, it automatically captures normalised_niche from the
+    # enclosing scope. This is cleaner than using a global variable.
+    # ─────────────────────────────────────────────────────────────────────────
+    def _execute_tool(tool_name: str, tool_input: dict) -> str:
+        print(f"  → Calling tool: {tool_name}({json.dumps(tool_input, indent=2)})")
+
+        try:
+            if tool_name == "search_youtube":
+                result = search_youtube(
+                    query=tool_input["query"],
+                    max_results=tool_input.get("max_results", 10)
+                )
+            elif tool_name == "get_transcript":
+                result = get_transcript(video_id=tool_input["video_id"])
+
+                # Save transcript with the correct niche label.
+                # Previously this called save_transcript(result) without a niche,
+                # causing video IDs to appear as niche names in the RAG knowledge base.
+                # Now the niche is passed explicitly from the enclosing run_agent scope.
+                if result.get("transcript"):
+                    save_transcript(result, niche=normalised_niche)
+            else:
+                result = {"error": f"Unknown tool: {tool_name}"}
+
+            result_str = json.dumps(result, ensure_ascii=False)
+            preview = result_str[:200] + "..." if len(result_str) > 200 else result_str
+            print(f"  ← Tool result preview: {preview}")
+            return result_str
+
+        except Exception as e:
+            error_msg = f"Tool execution failed: {str(e)}"
+            print(f"  ✗ {error_msg}")
+            return json.dumps({"error": error_msg})
 
     # ── OPENAI DIFFERENCE #1 ─────────────────────────────────────────────────
     # System prompt goes INSIDE messages[] as the first entry with role="system"
@@ -145,7 +156,7 @@ def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
                     "type":     "function",
                     "function": {
                         "name":      tc.function.name,
-                        "arguments": tc.function.arguments,  # Already a JSON string
+                        "arguments": tc.function.arguments,
                     }
                 }
                 for tc in message.tool_calls
@@ -153,8 +164,6 @@ def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
         messages.append(assistant_message)
 
         # ── CASE 1: Model is done ─────────────────────────────────────────────
-        # finish_reason == "stop" means the model wrote its final response
-        # (equivalent to "end_turn" in Anthropic API)
         if finish_reason == "stop":
             print("\n[Agent] Research complete. Parsing output...")
             return parse_final_output(message.content or "", niche)
@@ -168,7 +177,7 @@ def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
                 # arguments come back as a JSON string — we parse it to a dict
                 tool_input = json.loads(tool_call.function.arguments)
 
-                result = execute_tool(tool_name, tool_input)
+                result = _execute_tool(tool_name, tool_input)
 
                 # ── OPENAI DIFFERENCE #3 ─────────────────────────────────────
                 # Tool results get their OWN message with role="tool"

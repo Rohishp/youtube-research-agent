@@ -59,37 +59,56 @@ def run_script_agent(brief: ResearchBrief) -> VideoScript:
         {"role": "user",   "content": build_script_prompt(brief_json)},
     ]
 
-    print("[Script Agent] Calling model (this may take 30-60 seconds for a full script)...")
+    print("[Script Agent] Calling model (streaming output below)...")
+    print("-" * 40)
 
+    # stream=True changes how the response comes back.
+    # Instead of waiting for the full response then getting it all at once,
+    # you get a stream of small chunks (deltas) as they're generated.
+    #
+    # Why this matters in production:
+    # - A 1800-word script takes 15-20 seconds to generate
+    # - Without streaming: user waits 20 seconds, sees nothing, then gets everything
+    # - With streaming: user sees tokens appearing immediately, like watching someone type
+    #
+    # The trade-off: streaming is more complex to handle because you must
+    # reassemble the chunks into a complete response yourself.
     response = client.chat.completions.create(
         model=MODEL,
         messages=messages,
-        max_tokens=4096,    # Scripts are long — we need the full token budget
-        temperature=0.7,    # Small amount of creativity for the writing
-                            # Research agent uses default (1.0) for exploration
-                            # Script agent uses 0.7 for more focused creative output
+        max_tokens=4096,
+        temperature=0.7,
+        stream=True,        # ← the one-word change that enables streaming
     )
 
-    message = response.choices[0].message
-    finish_reason = response.choices[0].finish_reason
+    # Reassemble the streamed chunks into complete text
+    # Each chunk is a small delta — a few tokens at most
+    full_content = ""
+    finish_reason = None
+
+    for chunk in response:
+        delta = chunk.choices[0].delta
+
+        # Print each token as it arrives — this is the streaming UX
+        if delta.content:
+            print(delta.content, end="", flush=True)
+            full_content += delta.content
+
+        # The last chunk carries the finish_reason
+        if chunk.choices[0].finish_reason:
+            finish_reason = chunk.choices[0].finish_reason
+
+    print()  # newline after streaming completes
+    print("-" * 40)
 
     print(f"[Script Agent] Finish reason: {finish_reason}")
 
     if finish_reason == "length":
-        # Script was cut off — the model ran out of tokens mid-generation
-        # This means the script is incomplete. Options:
-        # 1. Increase max_tokens (costs more)
-        # 2. Ask for a shorter script in the prompt
-        # 3. Use gpt-4o which handles long outputs better
         print("[Script Agent] WARNING: Output was cut off at token limit.")
-        print("[Script Agent] The script may be incomplete.")
-        print("[Script Agent] Try reducing requested video length in the prompt,")
-        print("[Script Agent] or increase max_tokens in script_agent/loop.py")
+        print("[Script Agent] Try reducing requested video length or increase max_tokens.")
 
-    raw_output = message.content or ""
-    print(f"[Script Agent] Raw output length: {len(raw_output):,} characters")
-
-    return parse_script_output(raw_output, brief.niche)
+    print(f"[Script Agent] Total characters received: {len(full_content):,}")
+    return parse_script_output(full_content, brief.niche)
 
 
 def parse_script_output(text: str, niche: str) -> VideoScript:
