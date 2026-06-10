@@ -57,7 +57,7 @@ def main():
         # ── MODE 1: Full pipeline (default) ──────────────────────────────────
         if not args.research_only and args.brief is None:
             from orchestrator import run_pipeline
-            brief, script = run_pipeline(niche=args.niche)
+            brief, script, quality_report = run_pipeline(niche=args.niche)
 
         # ── MODE 2: Research only ─────────────────────────────────────────────
         elif args.research_only:
