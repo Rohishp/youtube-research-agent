@@ -97,7 +97,12 @@ def _run_pipeline_background(niche: str, run_id: str):
 
     try:
         from orchestrator import run_pipeline
-        state = run_pipeline(niche=niche)
+        from control_plane.state import load_state
+        
+        # Load the state already created by the API endpoint
+        # This ensures the orchestrator uses the SAME run_id
+        existing_state = load_state(run_id)
+        state = run_pipeline(niche=niche, run_id=run_id)
     except ValueError as e:
         # Gate stopped the pipeline — expected, not an error
         # State is already saved by the orchestrator

@@ -48,6 +48,7 @@ def run_pipeline(
     niche: str,
     save_outputs: bool = True,
     research_brief: ResearchBrief = None,
+    run_id: str = None,
 ) -> PipelineState:
     """
     Run the governed pipeline. Returns the unified PipelineState.
@@ -56,7 +57,10 @@ def run_pipeline(
     gate decisions, cost, timing. One object, one source of truth.
     """
     # ── CREATE STATE ──────────────────────────────────────────────────────────
-    state = PipelineState(niche=niche)
+    sif run_id:
+        state = PipelineState(run_id=run_id, niche=niche)
+    else:
+        state = PipelineState(niche=niche)
     pipeline_start = time.perf_counter()
 
     print(f"\n{'='*60}")
