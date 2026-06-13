@@ -1,0 +1,136 @@
+{
+  "niche": "beginner investing mistakes",
+  "opportunity_score": 8,
+  "opportunity_score_reasoning": "Many videos in this niche have high view counts and engagement, indicating strong interest. However, there's a saturation of similar content, meaning there's moderate competition but also clear demand for unique angles or deeper insights.",
+  "top_videos_analyzed": [
+    {
+      "video_id": "eFf3Yk1B1VE",
+      "title": "Investing Mistakes - Why Beginners Lose Money in the Stock Market",
+      "channel_name": "ClearValue Tax",
+      "view_count": 824231,
+      "like_count": 29477,
+      "comment_count": 2044,
+      "published_at": "2020-06-05T22:58:35Z",
+      "duration": "PT15M55S",
+      "description": "This video discusses investing mistakes to avoid in the stock market for beginners and intermediate investors."
+    },
+    {
+      "video_id": "gtFR8E2hrPg",
+      "title": "5 Investing Mistakes To Avoid In Your 20’s",
+      "channel_name": "Graham Stephan",
+      "view_count": 393162,
+      "like_count": 25279,
+      "comment_count": 1700,
+      "published_at": "2019-02-15T23:30:01Z",
+      "duration": "PT15M33S",
+      "description": "This video covers common investing mistakes people make in their 20s and how to avoid them."
+    },
+    {
+      "video_id": "u0sAJ1OnBKU",
+      "title": "8 Beginner Investing Mistakes I'll Never Make Again (After 10 Years of Experience)",
+      "channel_name": "Humphrey Yang",
+      "view_count": 308934,
+      "like_count": 6367,
+      "comment_count": 514,
+      "published_at": "2023-08-16T18:00:27Z",
+      "duration": "PT16M36S",
+      "description": "This video goes over 8 key investing mistakes to avoid, based on personal investment experiences."
+    },
+    {
+      "video_id": "UdclKIQ1qZ8",
+      "title": "5 Beginner Investing Mistakes I'll Never Repeat (After 17 Years of Experience)",
+      "channel_name": "Tom Crosshill",
+      "view_count": 170892,
+      "like_count": 2873,
+      "comment_count": 306,
+      "published_at": "2025-05-08T16:45:05Z",
+      "duration": "PT11M38S",
+      "description": "The video shares five costly investing mistakes observed over years of professional investing experience."
+    },
+    {
+      "video_id": "7AKta9I8KhA",
+      "title": "7 BIG! BEGINNER INVESTING MISTAKES TO AVOID",
+      "channel_name": "STOCK UP! with LARRY JONES",
+      "view_count": 55523,
+      "like_count": 5968,
+      "comment_count": 613,
+      "published_at": "2021-04-03T01:51:53Z",
+      "duration": "PT12M10S",
+      "description": "This video discusses 7 common investing mistakes to avoid for beginners."
+    }
+  ],
+  "key_themes": [
+    "Diversification",
+    "Market Timing",
+    "Long-term Investing vs. Short-term Trading"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Emotional Investing Strategies",
+      "explanation": "While many videos mention avoiding emotional decisions, few delve deeply into psychological strategies for maintaining emotional discipline.",
+      "estimated_demand": "high",
+      "suggested_video_title": "Mastering Your Emotions: Key to Successful Investing"
+    },
+    {
+      "gap_title": "Investing Mistakes for Different Age Groups",
+      "explanation": "Most content focuses on mistakes for general beginners or people in their 20s, lacking personalized advice for people in their 30s, 40s, etc.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Avoiding Investment Pitfalls at Every Age"
+    },
+    {
+      "gap_title": "Academic Insights on Investing Missteps",
+      "explanation": "There's a shortage of content that links academic research with practical advice on common investing mistakes.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "What Science Says About Common Investing Mistakes"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "Mastering Your Emotions: Key to Successful Investing",
+      "hook": "Learn how overcoming emotional biases can significantly boost your investing success.",
+      "target_emotion": "Empowerment",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "People are eager to discover methods to improve their investing success, and psychological insights are underexplored."
+    },
+    {
+      "title": "Avoiding Investment Pitfalls at Every Age",
+      "hook": "Find out the unique mistakes investors make in their 30s, 40s, 50s, and how to avoid them.",
+      "target_emotion": "Insight",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Investors look for age-specific content as financial priorities shift with life stages."
+    },
+    {
+      "title": "What Science Says About Common Investing Mistakes",
+      "hook": "Explore surprising academic findings and real-world applications for minimizing your investment errors.",
+      "target_emotion": "Intrigue",
+      "estimated_search_volume": "medium",
+      "competition_level": "medium",
+      "why_it_will_work": "Viewers are interested in content backed by research, offering credible insights beyond common advice."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "Informative and authoritative",
+    "pacing": "Moderate to fast",
+    "visual_style": "Mixed media with charts and personal examples",
+    "common_hooks": [
+      "Avoid these common mistakes...",
+      "Here's what I wish I had known..."
+    ],
+    "words_to_use": [
+      "Diversification",
+      "Long-term"
+    ],
+    "words_to_avoid": [
+      "Gamble",
+      "Surefire"
+    ]
+  },
+  "recommended_video_length": "12-15 minutes",
+  "best_upload_days": [
+    "Tuesday",
+    "Thursday"
+  ],
+  "summary": "The niche 'beginner investing mistakes' is well-established with high interest and viewership. Current content often highlights avoiding emotional decisions, diversification, and timing, but there are opportunities to further explore emotional discipline, age-specific advice, and academic insights related to investing mistakes. Videos combining in-depth analysis with practical guidance can successfully capture audience attention and engagement."
+}

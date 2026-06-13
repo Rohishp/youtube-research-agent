@@ -1,0 +1,136 @@
+{
+  "run_id": "run_20260611_021946_48cce2",
+  "niche": "morning routines for entrepreneurs",
+  "status": "completed",
+  "started_at": "2026-06-11T02:19:46.375253",
+  "duration_seconds": 35.31,
+  "total_tokens_input": 21119,
+  "total_tokens_output": 1594,
+  "total_cost_usd": 0.1295,
+  "final_eval_score": 6,
+  "final_title": "The 5-Minute Minimalist Morning Routine for Busy Entrepreneurs",
+  "warnings": [],
+  "error": null,
+  "stages": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "started_at": "2026-06-11T02:19:46.375253",
+      "duration_seconds": 19.48,
+      "iterations": 7,
+      "tokens_input": 21119,
+      "tokens_output": 1594,
+      "cost_usd": 0.1295,
+      "eval_score": null,
+      "gate_decision": {
+        "gate": "niche_gate",
+        "action": "proceed",
+        "reason": "Research passed all quality checks",
+        "detail": "Score: 8/10 | Videos: 5 | Gaps: 3",
+        "opportunity_score": 8,
+        "videos_analyzed": 5,
+        "gaps_found": 3
+      },
+      "error": null,
+      "tool_calls": [
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "morning routines for entrepreneurs",
+            "max_results": 10
+          },
+          "duration_ms": 419.0,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "successful entrepreneur morning routines",
+            "max_results": 10
+          },
+          "duration_ms": 734.2,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "kIWXzXLkau4"
+          },
+          "duration_ms": 839.3,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "SELWtQpcy1A"
+          },
+          "duration_ms": 812.9,
+          "success": true,
+          "error": null,
+          "chars_returned": 7772,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "9pLk3OU6bOs"
+          },
+          "duration_ms": 861.9,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "eEirzGD525I"
+          },
+          "duration_ms": 1010.5,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "PFKGHL1MqkU"
+          },
+          "duration_ms": 817.4,
+          "success": true,
+          "error": null,
+          "chars_returned": 7150,
+          "saved_to_disk": true
+        }
+      ]
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "started_at": "2026-06-11T02:20:05.850149",
+      "duration_seconds": 15.82,
+      "iterations": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cost_usd": 0.0,
+      "eval_score": 6,
+      "gate_decision": {
+        "gate": "script_gate",
+        "action": "proceed",
+        "reason": "Script score 6/10 meets threshold (6)",
+        "detail": "Script passed quality gate on attempt 1.",
+        "eval_score": 6
+      },
+      "error": null,
+      "tool_calls": []
+    }
+  ]
+}

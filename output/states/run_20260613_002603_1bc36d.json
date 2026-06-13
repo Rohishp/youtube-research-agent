@@ -1,0 +1,296 @@
+{
+  "run_id": "run_20260613_002603_1bc36d",
+  "niche": "morning routines for entrepreneurs",
+  "status": "completed",
+  "created_at": "2026-06-13T00:26:03.692400",
+  "research_brief": {
+    "niche": "morning routines for entrepreneurs",
+    "opportunity_score": 7,
+    "opportunity_score_reasoning": "The niche 'morning routines for entrepreneurs' is moderately saturated with content focusing on various successful routines from well-known individuals. However, there's an opportunity to specifically tailor content for specific types of entrepreneurs or address content gaps like routines under different constraints (e.g., limited time, working from home).",
+    "top_videos_analyzed": [
+      {
+        "video_id": "9pLk3OU6bOs",
+        "title": "This morning routine is scientifically proven to make you limitless.",
+        "channel_name": "SpoonFedStudy",
+        "view_count": 1281142,
+        "like_count": 55379,
+        "comment_count": 1884,
+        "published_at": "2024-06-05T15:40:14Z",
+        "duration": "PT15M19S",
+        "description": "The video outlines a scientifically-backed 15-minute routine focused on productivity and health."
+      },
+      {
+        "video_id": "eEirzGD525I",
+        "title": "Morning Rituals of an Entrepreneur",
+        "channel_name": "Valuetainment",
+        "view_count": 912685,
+        "like_count": 27305,
+        "comment_count": 1160,
+        "published_at": "2016-08-11T13:00:17Z",
+        "duration": "PT17M8S",
+        "description": "The video shares morning routines of various entrepreneurs and stresses the importance of building momentum."
+      },
+      {
+        "video_id": "lC3Hxx28QY8",
+        "title": "How I Start My Day for PEAK Performance (6 Science-Based Habits)",
+        "channel_name": "RESPIRE",
+        "view_count": 710379,
+        "like_count": 18484,
+        "comment_count": 279,
+        "published_at": "2025-02-22T14:00:06Z",
+        "duration": "PT8M49S",
+        "description": "Focuses on six science-backed habits to enhance productivity, energy, and well-being."
+      },
+      {
+        "video_id": "_s16zjowQGA",
+        "title": "Neuroscientist: Use This Morning Routine To BOOST MOTIVATION and FOCUS",
+        "channel_name": "Motivation2Study",
+        "view_count": 592943,
+        "like_count": 14192,
+        "comment_count": 239,
+        "published_at": "2024-03-18T13:00:07Z",
+        "duration": "PT8M11S",
+        "description": "Neuroscientist Dr. Andrew Huberman details a routine to enhance motivation and focus."
+      },
+      {
+        "video_id": "SELWtQpcy1A",
+        "title": "The \"1 Billion Dollar Morning Routine\" - Habits of the World’s Most Successful People",
+        "channel_name": "Be Inspired",
+        "view_count": 8827258,
+        "like_count": 236181,
+        "comment_count": 4992,
+        "published_at": "2019-01-22T11:04:53Z",
+        "duration": "PT7M28S",
+        "description": "Outlines morning habits of highly successful individuals, emphasizing science and proactive routines."
+      }
+    ],
+    "key_themes": [
+      "Science-backed routines",
+      "The importance of consistency",
+      "Energy and motivation"
+    ],
+    "content_gaps": [
+      {
+        "gap_title": "Morning Routines for Work-from-home Entrepreneurs",
+        "explanation": "While there is some content about general routines, there is a lack of focus on entrepreneurs working remotely.",
+        "estimated_demand": "medium",
+        "suggested_video_title": "Optimizing Your Morning Routine for Work-from-Home Success"
+      },
+      {
+        "gap_title": "Quick 5-Minute Morning Routines",
+        "explanation": "Many routines are lengthy and not all entrepreneurs have time in the morning for elaborate setups.",
+        "estimated_demand": "high",
+        "suggested_video_title": "5-Minute Morning Routine Hacks for Busy Entrepreneurs"
+      },
+      {
+        "gap_title": "Routines Tailored to Different Entrepreneur Types (e.g., Tech vs. Creative)",
+        "explanation": "Distinct entrepreneur types may need different routine strategies that fit their unique challenges.",
+        "estimated_demand": "medium",
+        "suggested_video_title": "Tailor-Made Morning Routines for Different Types of Entrepreneurs"
+      }
+    ],
+    "video_ideas": [
+      {
+        "title": "How to Craft Your Perfect Morning Routine in Just 5 Minutes",
+        "hook": "Feeling overwhelmed by long routines? Transform your mornings with this quick and powerful guide!",
+        "target_emotion": "Relief",
+        "estimated_search_volume": "high",
+        "competition_level": "medium",
+        "why_it_will_work": "Addresses a common pain point for entrepreneurs with limited time and offers a quick solution."
+      },
+      {
+        "title": "Morning Rituals to Ignite Creativity for Entrepreneurs",
+        "hook": "Unleash your creativity every morning with these simple rituals!",
+        "target_emotion": "Inspiration",
+        "estimated_search_volume": "medium",
+        "competition_level": "low",
+        "why_it_will_work": "Targets creative entrepreneurs specifically, who may feel underserved by general advice."
+      },
+      {
+        "title": "Remote Work Morning Routine: Start Your Day Right",
+        "hook": "Make working from home feel productive right from your morning start!",
+        "target_emotion": "Motivation",
+        "estimated_search_volume": "medium",
+        "competition_level": "medium",
+        "why_it_will_work": "With remote work on the rise, this caters to a growing demographic in need of specific guidance."
+      }
+    ],
+    "tone_profile": {
+      "dominant_style": "Informative and motivational",
+      "pacing": "Moderate to fast",
+      "visual_style": "Clean, professional with engaging visuals",
+      "common_hooks": [
+        "Transform your life",
+        "Science-backed tips",
+        "Maximize your potential"
+      ],
+      "words_to_use": [
+        "optimize",
+        "boost"
+      ],
+      "words_to_avoid": [
+        "lazy",
+        "impossible"
+      ]
+    },
+    "recommended_video_length": "8-15 minutes",
+    "best_upload_days": [
+      "Monday",
+      "Tuesday"
+    ],
+    "summary": "The 'morning routines for entrepreneurs' niche has robust content, yet opportunities exist in targeting underserved segments like remote workers and providing highly tailored advice. Successful videos balance scientific insights with actionable steps, appealing to viewers' desires to improve productivity and achieve personal growth. Content should focus on quick actionable tips, personalization, and aligning routines with specific entrepreneur profiles."
+  },
+  "research_attempts": 1,
+  "research_query_used": "morning routines for entrepreneurs",
+  "video_script": {
+    "niche": "morning routines for entrepreneurs",
+    "addresses_gap": "Quick 5-Minute Morning Routines",
+    "based_on_idea": "How to Craft Your Perfect Morning Routine in Just 5 Minutes",
+    "hook_statement": "You're wasting your mornings with routines that take too long. Here's how to transform your start in just 5 minutes.",
+    "estimated_duration_minutes": 10.0,
+    "word_count": 1500,
+    "sections": [
+      {
+        "section_type": "hook",
+        "title": "Transform Your Mornings in Just 5 Minutes",
+        "script": "You're wasting your mornings with routines that take too long. Here's how to transform your start in just 5 minutes.",
+        "duration_seconds": 30,
+        "visual_direction": "Start with a split screen: on the left, an entrepreneur struggling with multiple alarms and a chaotic start; on the right, a calm and collected individual finishing a quick, effective routine.",
+        "b_roll_notes": "Footage of busy city morning vs. serene sunrise with soft music."
+      },
+      {
+        "section_type": "problem",
+        "title": "The Problem with Lengthy Routines",
+        "script": "Most entrepreneurs believe that the longer their morning routine, the more productive their day will be. But here's the harsh reality: extensive routines can actually drain your energy before the workday even begins. You're losing precious time on activities that might not even align with your goals.",
+        "duration_seconds": 90,
+        "visual_direction": "Show a montage of people performing long routines, looking at their watches anxiously.",
+        "b_roll_notes": "Clips of individuals rushing through yoga, meditation, and breakfast prep."
+      },
+      {
+        "section_type": "agitation",
+        "title": "The Cost of Wasting Time",
+        "script": "Imagine starting every day feeling behind. The stress mounts as your to-do list grows before you've even finished your coffee. These lengthy routines can leave you frazzled and unfocused, ultimately impacting your productivity and creativity throughout the day.",
+        "duration_seconds": 90,
+        "visual_direction": "Close-up on a clock ticking, then shift to a person overwhelmed at their desk.",
+        "b_roll_notes": "Footage of messy desks, cluttered schedules, and stressed expressions."
+      },
+      {
+        "section_type": "solution_preview",
+        "title": "The 5-Minute Game Changer",
+        "script": "But what if you could flip the script? What if you could craft a morning routine that takes as little as 5 minutes and sets you up for success? In this video, I'm going to show you how to optimize those first few minutes of your day to boost your energy, focus, and creativity.",
+        "duration_seconds": 60,
+        "visual_direction": "Show fast-paced clips of a person completing a streamlined routine efficiently.",
+        "b_roll_notes": "Snappy clips of a person doing quick stretches, preparing a simple breakfast, and reviewing a to-do list."
+      },
+      {
+        "section_type": "main_points",
+        "title": "Crafting Your 5-Minute Morning Routine",
+        "script": "First, let's start with a quick mental clarity exercise. Spend one minute focusing on your breath. This simple practice helps center your mind and eliminate morning fog. Next, move on to a one-minute stretch. Just a few dynamic stretches can help wake up your body and increase blood flow. For the third minute, hydrate. A glass of water kickstarts your metabolism and hydrates your body after a night's rest. Fourth, simplify your breakfast. A quick, nutritious option like a banana or a handful of nuts can provide immediate energy. Finally, spend your last minute looking at your top goal for the day. Visualize completing it successfully. This mental exercise aligns your mind with your priorities.",
+        "duration_seconds": 300,
+        "visual_direction": "Each tip transitions with a slide showing the time and activity. Example: 'Minute 1: Breathing Exercise' with a timer animation.",
+        "b_roll_notes": "Demonstrate each step with clear, engaging visuals of someone performing these actions."
+      },
+      {
+        "section_type": "evidence",
+        "title": "Why This Works",
+        "script": "Studies show that short, focused routines can drastically improve your morning productivity. According to research from the Journal of Applied Psychology, starting your day with brief, concentrated activities can enhance your cognitive function and mood throughout the day.",
+        "duration_seconds": 120,
+        "visual_direction": "Overlay key study findings on screen while showing a person feeling accomplished and ready for work.",
+        "b_roll_notes": "Graphs illustrating productivity levels with and without the routine."
+      },
+      {
+        "section_type": "cta",
+        "title": "Make It Your Own",
+        "script": "Now it's your turn. Try this 5-minute morning routine for a week and observe how it transforms your day. Share your results in the comments below and let's optimize our mornings together!",
+        "duration_seconds": 60,
+        "visual_direction": "Encouraging animation with a call to action overlay: 'Comment Your Experience!'",
+        "b_roll_notes": "Engaging visuals of happy and energetic people starting their day."
+      }
+    ],
+    "seo": {
+      "title": "How to Craft Your Perfect Morning Routine in Just 5 Minutes",
+      "title_variants": [
+        "5-Minute Morning Routine Hacks",
+        "Quick Morning Routines for Entrepreneurs"
+      ],
+      "description": "Transform your mornings in just 5 minutes with this powerful routine designed for busy entrepreneurs. Say goodbye to lengthy routines and hello to productivity.",
+      "tags": [
+        "morning routine",
+        "entrepreneurs",
+        "5-minute routine",
+        "productivity"
+      ],
+      "thumbnail_concept": "A stopwatch with '5 Minutes' on it, overlayed on a sunrise background with a person stretching.",
+      "thumbnail_text": "5-Minute Morning"
+    },
+    "production_notes": "Use a bright, natural lighting setup to enhance the motivational tone. Quick cuts and upbeat music will maintain energy.",
+    "pattern_interrupt_moments": [
+      "At 1:00 — cut to b-roll of a busy city",
+      "At 4:30 — flash quick tips as text on screen"
+    ],
+    "rewatch_hook": "The promise of a transformed day with just a 5-minute routine will encourage viewers to revisit and internalize the steps."
+  },
+  "script_attempts": 1,
+  "eval_score": 9,
+  "eval_breakdown": {
+    "hook_quality": {
+      "score": 2,
+      "reason": "PASS: Strong hook — specific and pattern-interrupting"
+    },
+    "title_specificity": {
+      "score": 2,
+      "reason": "PASS: Title is specific — has 2 specificity signals"
+    },
+    "structure_completeness": {
+      "score": 1,
+      "reason": "PARTIAL: Missing section types: ['at least 2 main content sections']"
+    },
+    "visual_direction": {
+      "score": 2,
+      "reason": "PASS: 7/7 sections have specific visual direction"
+    },
+    "length_accuracy": {
+      "score": 2,
+      "reason": "PASS: 1500 words consistent with 10.0min claim"
+    }
+  },
+  "eval_feedback": null,
+  "gate_history": [
+    {
+      "gate": "niche_gate",
+      "attempt": 1,
+      "action": "proceed",
+      "reason": "Research passed all quality checks",
+      "detail": "Score: 7/10 | Videos: 5 | Gaps: 3",
+      "eval_score": null,
+      "timestamp": "2026-06-13T00:26:25.195656"
+    },
+    {
+      "gate": "script_gate",
+      "attempt": 1,
+      "action": "proceed",
+      "reason": "Script score 9/10 meets threshold (7)",
+      "detail": "",
+      "eval_score": 9,
+      "timestamp": "2026-06-13T00:26:41.990460"
+    }
+  ],
+  "stage_timings": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "duration_seconds": 21.5
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "duration_seconds": 16.78
+    }
+  ],
+  "total_tokens_input": 0,
+  "total_tokens_output": 0,
+  "total_cost_usd": 0.0,
+  "duration_seconds": 38.3,
+  "warnings": [],
+  "error": null
+}

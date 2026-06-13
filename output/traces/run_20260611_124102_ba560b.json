@@ -1,0 +1,141 @@
+{
+  "run_id": "run_20260611_124102_ba560b",
+  "niche": "stoic philosophy for modern life",
+  "status": "completed",
+  "started_at": "2026-06-11T12:41:02.855689",
+  "duration_seconds": 69.99,
+  "total_tokens_input": 19815,
+  "total_tokens_output": 1440,
+  "total_cost_usd": 0.1207,
+  "final_eval_score": 7,
+  "final_title": "Stoicism at Work: Increasing Productivity and Reducing Stress",
+  "warnings": [],
+  "error": null,
+  "stages": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "started_at": "2026-06-11T12:41:02.855689",
+      "duration_seconds": 55.43,
+      "iterations": 8,
+      "tokens_input": 19815,
+      "tokens_output": 1440,
+      "cost_usd": 0.1207,
+      "eval_score": null,
+      "gate_decision": {
+        "gate": "niche_gate",
+        "action": "proceed",
+        "reason": "Research passed all quality checks",
+        "detail": "Score: 7/10 | Videos: 3 | Gaps: 3",
+        "opportunity_score": 7,
+        "videos_analyzed": 3,
+        "gaps_found": 3
+      },
+      "error": null,
+      "tool_calls": [
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "stoic philosophy for modern life",
+            "max_results": 10
+          },
+          "duration_ms": 531.0,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "stoic philosophy in daily life",
+            "max_results": 10
+          },
+          "duration_ms": 485.6,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "Yhn1Fe8cT0Q"
+          },
+          "duration_ms": 6404.2,
+          "success": true,
+          "error": null,
+          "saved_to_disk": false
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "R9OCA6UFE-0"
+          },
+          "duration_ms": 6289.0,
+          "success": true,
+          "error": null,
+          "saved_to_disk": false
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "LGXRpbDuDGE"
+          },
+          "duration_ms": 6416.5,
+          "success": true,
+          "error": null,
+          "saved_to_disk": false
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "heh5XLwZVOY"
+          },
+          "duration_ms": 6189.6,
+          "success": true,
+          "error": null,
+          "saved_to_disk": false
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "6K3wiD6ACWg"
+          },
+          "duration_ms": 7672.2,
+          "success": true,
+          "error": null,
+          "saved_to_disk": false
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "pjy6kOJ2t50"
+          },
+          "duration_ms": 6453.1,
+          "success": true,
+          "error": null,
+          "saved_to_disk": false
+        }
+      ]
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "started_at": "2026-06-11T12:41:58.297314",
+      "duration_seconds": 14.55,
+      "iterations": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cost_usd": 0.0,
+      "eval_score": 7,
+      "gate_decision": {
+        "gate": "script_gate",
+        "action": "proceed",
+        "reason": "Script score 7/10 meets threshold (7)",
+        "detail": "Script passed quality gate on attempt 1.",
+        "eval_score": 7
+      },
+      "error": null,
+      "tool_calls": []
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "niche": "stoic philosophy for modern life",
+  "opportunity_score": 8,
+  "opportunity_score_reasoning": "The interest in Stoic philosophy applied to modern life is high, with substantial view counts and engagement across various platforms like TED and niche Stoic channels. The philosophical depth combined with practical applicability resonates well with a wide audience seeking personal growth, mental resilience, and philosophical guidance.",
+  "top_videos_analyzed": [
+    {
+      "video_id": "EFkyxzJtiv4",
+      "title": "Stoicism: Become Undefeatable",
+      "channel_name": "Aperture",
+      "view_count": 13403206,
+      "like_count": 651482,
+      "comment_count": 8696,
+      "published_at": "2021-04-30T17:30:00Z",
+      "duration": "PT12M52S",
+      "description": "Explores the core of Stoicism as a way to accept and remain indifferent to life's uncontrollable events, turning negative emotions into a unique perspective on the world."
+    },
+    {
+      "video_id": "R9OCA6UFE-0",
+      "title": "The philosophy of Stoicism - Massimo Pigliucci",
+      "channel_name": "TED-Ed",
+      "view_count": 11384984,
+      "like_count": 400224,
+      "comment_count": 4885,
+      "published_at": "2017-06-19T15:00:18Z",
+      "duration": "PT5M30S",
+      "description": "Describes Stoicism as a philosophy of coping with life's challenges, focusing on virtues like wisdom and courage, and its influence on modern psychology."
+    },
+    {
+      "video_id": "LGXRpbDuDGE",
+      "title": "When Life Hurts, Care Less About It | The Philosophy of Marcus Aurelius",
+      "channel_name": "Einzelgänger",
+      "view_count": 4623470,
+      "like_count": 138714,
+      "comment_count": 2794,
+      "published_at": "2023-01-12T15:00:20Z",
+      "duration": "PT14M8S",
+      "description": "Focuses on Marcus Aurelius' Stoic advice on caring less about things beyond one's control and living in the present to find peace."
+    }
+  ],
+  "key_themes": [
+    "Control over reactions",
+    "Virtues and self-improvement",
+    "Living in the present"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Practical Exercises in Stoicism for Daily Use",
+      "explanation": "While many videos explore the philosophy, few offer actionable exercises viewers can implement in their daily lives.",
+      "estimated_demand": "high",
+      "suggested_video_title": "5 Daily Stoic Exercises to Build Resilience"
+    },
+    {
+      "gap_title": "Stoicism Beyond Marcus Aurelius",
+      "explanation": "The focus is often on well-known figures; there's an opportunity to delve into lesser-known Stoics and their teachings.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Beyond Marcus: Unexplored Stoic Masters and Their Teachings"
+    },
+    {
+      "gap_title": "Modern Misinterpretations of Stoicism",
+      "explanation": "Some confusion exists between authentic Stoicism and modern misapplications (e.g., hustle culture).",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Debunking Modern Myths About Stoicism: What It Really Is"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "5 Daily Stoic Exercises to Build Resilience",
+      "hook": "Transform your mindset with these simple daily exercises inspired by ancient Stoics!",
+      "target_emotion": "Empowerment",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "Practical advice that viewers can apply immediately is consistently sought after, filling a demand gap."
+    },
+    {
+      "title": "Debunking Modern Myths About Stoicism: What It Really Is",
+      "hook": "Already think you know Stoicism? Think again.",
+      "target_emotion": "Curiosity",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Clarification content performs well, especially in niches with prevalent misunderstandings."
+    },
+    {
+      "title": "Beyond Marcus: Unexplored Stoic Masters and Their Teachings",
+      "hook": "Discover the wisdom of Stoics you’ve never heard of.",
+      "target_emotion": "Intrigue",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "There's a thirst for deeper knowledge that goes beyond mainstream figures."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "Informative and calm",
+    "pacing": "Moderate to slow",
+    "visual_style": "Minimalistic with emphasis on text and quotes",
+    "common_hooks": [
+      "Imagine a world where...",
+      "What if you could control...",
+      "In today's chaotic world..."
+    ],
+    "words_to_use": [
+      "virtue",
+      "control",
+      "perspective",
+      "calm",
+      "resilience"
+    ],
+    "words_to_avoid": [
+      "hustle",
+      "grind",
+      "instant"
+    ]
+  },
+  "recommended_video_length": "10-15 minutes",
+  "best_upload_days": [
+    "Tuesday",
+    "Thursday"
+  ],
+  "summary": "Stoic philosophy for modern life is a flourishing niche with a strong demand for practical exercises and clarification on misconceptions. Videos focusing on practical application, lesser-known Stoics, and debunking modern myths show great potential. Engaging, calm, and informative content will resonate with an audience eager for philosophical and personal growth."
+}

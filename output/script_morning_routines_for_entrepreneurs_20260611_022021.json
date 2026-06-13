@@ -1,0 +1,88 @@
+{
+  "niche": "morning routines for entrepreneurs",
+  "addresses_gap": "Minimalist morning routines",
+  "based_on_idea": "The 5-Minute Minimalist Morning Routine for Busy Entrepreneurs",
+  "hook_statement": "You're probably wasting your mornings with unnecessary steps. Here's how to reclaim your time with just 5 minutes.",
+  "estimated_duration_minutes": 9.0,
+  "word_count": 1450,
+  "sections": [
+    {
+      "section_type": "hook",
+      "title": "Reclaim Your Time in 5 Minutes",
+      "script": "You're probably wasting your mornings with unnecessary steps. Here's how to reclaim your time with just 5 minutes. Imagine starting your day with a burst of productivity, efficiency, and clarity—all without breaking a sweat. Sound too good to be true? Stick around, because I'm about to reveal a minimalist routine that will transform how you approach your mornings forever.",
+      "duration_seconds": 30,
+      "visual_direction": "Close-up shot of alarm clock showing 5:00 AM fading into a split screen: left shows a cluttered desk, right shows a clean, organized workspace.",
+      "b_roll_notes": "Footage of sunrise and a quick-cut montage of someone getting ready in a flurry versus a calm, collected approach."
+    },
+    {
+      "section_type": "problem",
+      "title": "The Problem with Overcomplicated Mornings",
+      "script": "Let's face it: many of us start our mornings juggling a dozen tasks, thinking we're maximizing our productivity. But in reality, we're just burning ourselves out before the day even begins. You're losing the first 90 minutes of your day to decisions that don't matter. What if you could condense all that chaos into a streamlined 5-minute routine that sets the tone for a productive day?",
+      "duration_seconds": 90,
+      "visual_direction": "Screen recording of a phone with multiple alarms set and a calendar filled with morning tasks. Pause on it for a couple of seconds.",
+      "b_roll_notes": "Fast-paced clips of someone rushing through morning tasks, spilling coffee, and scrambling to find keys."
+    },
+    {
+      "section_type": "agitation",
+      "title": "The Cost of a Chaotic Start",
+      "script": "Picture this: you rush through your morning, already stressed before you hit your desk. Your productivity plummets, and your mood follows. This isn't just a bad start—it's a barrier to success. The stress of chaotic mornings bleeds into your work, affecting your decision-making and creativity. Now imagine flipping that script, starting every day with clarity and purpose. The relief would be immeasurable.",
+      "duration_seconds": 100,
+      "visual_direction": "Footage of a person checking their watch repeatedly, looking stressed and overwhelmed.",
+      "b_roll_notes": "Close-up of a person’s stressed face, then transitioning to a serene expression as they take a deep breath."
+    },
+    {
+      "section_type": "solution_preview",
+      "title": "The 5-Minute Morning Solution",
+      "script": "Now, what if you could transform your mornings with a routine that takes just five minutes? Yes, five. In the next few minutes, you'll learn how this minimalist approach can skyrocket your productivity and set a positive tone for the rest of your day.",
+      "duration_seconds": 60,
+      "visual_direction": "Animated countdown clock showing 5 minutes with quick, engaging visuals of each step in the routine.",
+      "b_roll_notes": "Energetic music with text overlays highlighting '5-Minute Morning Solution'."
+    },
+    {
+      "section_type": "main_points",
+      "title": "The Step-by-Step 5-Minute Routine",
+      "script": "First up, hydration—start with a glass of water. This simple act jumpstarts your metabolism and wakes up your body. \n\nNext, mindfulness. Spend one minute focusing on your breath or setting a clear intention for the day. This isn’t about meditation; it’s about clarity and focus. \n\nThen, a quick stretch. Two minutes of stretching can relieve tension and boost your energy levels significantly. \n\nFinally, organize your priorities. Take one minute to jot down your top tasks for the day. This isn’t a to-do list; it’s a focus list. \n\nIn just five minutes, you’re not only preparing your body and mind for the day ahead but also reclaiming your time and energy.",
+      "duration_seconds": 240,
+      "visual_direction": "Split screen for each step: left showing the task being done, right showing a timer counting down.",
+      "b_roll_notes": "Footage of someone drinking water, doing light stretches, and writing in a journal."
+    },
+    {
+      "section_type": "evidence",
+      "title": "Why This Works",
+      "script": "Research shows that starting your day with hydration can improve cognitive function and mood. Mindfulness, even in short bursts, increases your focus and reduces stress. Stretching releases endorphins, boosting your energy without the need for caffeine. And setting clear priorities has been proven to increase productivity by up to 25%. These small actions compound, setting a foundation for a successful day.",
+      "duration_seconds": 120,
+      "visual_direction": "Graphical overlay of statistics and benefits of each step with quick transition effects.",
+      "b_roll_notes": "Footage of a scientific study being highlighted, with engaging animations showing benefits."
+    },
+    {
+      "section_type": "cta",
+      "title": "Take Action Now",
+      "script": "So, are you ready to reclaim your mornings? Start tomorrow with this 5-minute routine and feel the difference for yourself. Share your experience in the comments below, and let’s build a community of entrepreneurs who thrive with minimalist mornings.",
+      "duration_seconds": 60,
+      "visual_direction": "Call-to-action slide with text prompting viewers to comment and engage.",
+      "b_roll_notes": "Footage of a community board with pins and notes, symbolizing shared experiences."
+    }
+  ],
+  "seo": {
+    "title": "The 5-Minute Minimalist Morning Routine for Busy Entrepreneurs",
+    "title_variants": [
+      "5-Minute Morning Routine for Entrepreneurs",
+      "Minimalist Mornings: 5-Minute Routine"
+    ],
+    "description": "Transform your morning in just 5 minutes with this minimalist routine designed for busy entrepreneurs. Start your day with productivity and clarity.",
+    "tags": [
+      "morning routine",
+      "entrepreneur tips",
+      "productivity hacks",
+      "minimalist routine"
+    ],
+    "thumbnail_concept": "A split image of a cluttered morning scene vs. a calm, organized workspace with a clock showing 5 minutes.",
+    "thumbnail_text": "5-Minute Morning"
+  },
+  "production_notes": "Use natural lighting for a fresh morning look. Edit with quick cuts to maintain energy. Use text overlays to emphasize key points.",
+  "pattern_interrupt_moments": [
+    "At 2:30 — cut to b-roll of chaotic vs. calm mornings",
+    "At 5:00 — show animated timer countdown"
+  ],
+  "rewatch_hook": "The promise of a transformative yet simple 5-minute routine will entice viewers to replay and share with others."
+}

@@ -1,0 +1,136 @@
+{
+  "run_id": "run_20260611_114050_cacfdd",
+  "niche": "stoic philosophy for modern life",
+  "status": "completed",
+  "started_at": "2026-06-11T11:40:50.998636",
+  "duration_seconds": 50.88,
+  "total_tokens_input": 20190,
+  "total_tokens_output": 1687,
+  "total_cost_usd": 0.1263,
+  "final_eval_score": 7,
+  "final_title": "Daily Stoic Practices: A Routine for Modern Living",
+  "warnings": [],
+  "error": null,
+  "stages": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "started_at": "2026-06-11T11:40:50.998636",
+      "duration_seconds": 33.83,
+      "iterations": 7,
+      "tokens_input": 20190,
+      "tokens_output": 1687,
+      "cost_usd": 0.1263,
+      "eval_score": null,
+      "gate_decision": {
+        "gate": "niche_gate",
+        "action": "proceed",
+        "reason": "Research passed all quality checks",
+        "detail": "Score: 7/10 | Videos: 5 | Gaps: 3",
+        "opportunity_score": 7,
+        "videos_analyzed": 5,
+        "gaps_found": 3
+      },
+      "error": null,
+      "tool_calls": [
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "stoic philosophy for modern life",
+            "max_results": 10
+          },
+          "duration_ms": 513.9,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "applying stoic philosophy today",
+            "max_results": 10
+          },
+          "duration_ms": 405.7,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "EFkyxzJtiv4"
+          },
+          "duration_ms": 1568.8,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "R9OCA6UFE-0"
+          },
+          "duration_ms": 1002.3,
+          "success": true,
+          "error": null,
+          "chars_returned": 3997,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "LGXRpbDuDGE"
+          },
+          "duration_ms": 1396.3,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "heh5XLwZVOY"
+          },
+          "duration_ms": 996.2,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "Yhn1Fe8cT0Q"
+          },
+          "duration_ms": 938.1,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        }
+      ]
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "started_at": "2026-06-11T11:41:24.832603",
+      "duration_seconds": 17.04,
+      "iterations": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cost_usd": 0.0,
+      "eval_score": 7,
+      "gate_decision": {
+        "gate": "script_gate",
+        "action": "proceed",
+        "reason": "Script score 7/10 meets threshold (6)",
+        "detail": "Script passed quality gate on attempt 1.",
+        "eval_score": 7
+      },
+      "error": null,
+      "tool_calls": []
+    }
+  ]
+}

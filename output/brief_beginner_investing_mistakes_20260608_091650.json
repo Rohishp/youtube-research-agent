@@ -1,0 +1,114 @@
+{
+  "niche": "beginner investing mistakes",
+  "opportunity_score": 8,
+  "opportunity_score_reasoning": "The niche of 'beginner investing mistakes' is highly relevant with many active viewers as evidenced by the high view counts and engagement metrics on top videos. However, there is still room for more targeted and specific content since many popular videos cover mistakes broadly without delving into niche-specific contexts like crypto or real estate.",
+  "top_videos_analyzed": [
+    {
+      "video_id": "eFf3Yk1B1VE",
+      "title": "Investing Mistakes - Why Beginners Lose Money in the Stock Market",
+      "channel_name": "ClearValue Tax",
+      "view_count": 823658,
+      "like_count": 29471,
+      "comment_count": 2044,
+      "published_at": "2020-06-05T22:58:35Z",
+      "duration": "PT15M55S",
+      "description": "This video covers common mistakes to avoid for beginner investors in the stock market. The focus is on avoiding bankrupt companies, penny stocks, and the dangers of day trading."
+    },
+    {
+      "video_id": "gtFR8E2hrPg",
+      "title": "5 Investing Mistakes To Avoid In Your 20’s",
+      "channel_name": "Graham Stephan",
+      "view_count": 393163,
+      "like_count": 25279,
+      "comment_count": 1699,
+      "published_at": "2019-02-15T23:30:01Z",
+      "duration": "PT15M33S",
+      "description": "The video discusses 5 common investing mistakes made in the 20s, such as not investing early enough and copying others' strategies without understanding."
+    },
+    {
+      "video_id": "u0sAJ1OnBKU",
+      "title": "8 Beginner Investing Mistakes I'll Never Make Again (After 10 Years of Experience)",
+      "channel_name": "Humphrey Yang",
+      "view_count": 307845,
+      "like_count": 6362,
+      "comment_count": 514,
+      "published_at": "2023-08-16T18:00:27Z",
+      "duration": "PT16M36S",
+      "description": "This video outlines 8 mistakes, focusing on tax-advantaged accounts like Roth IRA, matching investments to risk tolerance, and defining a personal investment strategy."
+    }
+  ],
+  "key_themes": [
+    "Avoid moral hazards like day trading",
+    "Understand the importance of starting investment early",
+    "Align investment strategy with personal goals and risk tolerance"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Mistakes in Crypto Investing for Beginners",
+      "explanation": "While many videos cover stock market investing, there is very little specific to crypto for beginners. This addresses a growing need among new investors.",
+      "estimated_demand": "high",
+      "suggested_video_title": "Crypto Pitfalls: Common Mistakes New Investors Need to Avoid"
+    },
+    {
+      "gap_title": "Real Estate Investment Mistakes for Starters",
+      "explanation": "Real estate is a popular investment choice but few resources are targeting beginners accurately.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Beginner Real Estate Investor? Avoid these 5 Mistakes"
+    },
+    {
+      "gap_title": "Investment Tax Pitfalls Newbies Overlook",
+      "explanation": "Videos often overlook the importance of understanding tax implications, which can be a vital consideration for financial success.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Save Money: Avoid These Tax Mistakes When Investing"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "Top 10 Crypto Investing Mistakes Beginners Make",
+      "hook": "Many new crypto investors lose money due to avoidable mistakes. Don't let that happen to you!",
+      "target_emotion": "caution",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "As crypto interest grows, there’s an urgent need for educational content addressing specific beginner errors in this volatile market."
+    },
+    {
+      "title": "Maximize Gains! Tax Strategies for New Investors",
+      "hook": "Are taxes preventing you from enjoying your investment returns? Learn to navigate tax pitfalls effectively.",
+      "target_emotion": "empowerment",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Understanding taxation is crucial for investment gains and seldom addressed explicitly, providing a unique educational benefit."
+    },
+    {
+      "title": "Beginner's Guide to Real Estate: Avoid These Common Pitfalls",
+      "hook": "Thinking about real estate? Don’t make these costly mistakes—your wallet will thank you!",
+      "target_emotion": "interest",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Real estate is a highly attractive market for many, yet beginners lack specific guidance tailored to real estate investments."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "informative",
+    "pacing": "medium",
+    "visual_style": "informational graphics with practical examples",
+    "common_hooks": [
+      "Avoid these mistakes",
+      "Here's what beginners miss"
+    ],
+    "words_to_use": [
+      "risk tolerance",
+      "diversification"
+    ],
+    "words_to_avoid": [
+      "get rich quick",
+      "no risk"
+    ]
+  },
+  "recommended_video_length": "12 to 16 minutes",
+  "best_upload_days": [
+    "Monday",
+    "Thursday"
+  ],
+  "summary": "The 'beginner investing mistakes' niche is popular yet has content gaps in areas such as crypto and real estate. High view counts and engagement suggest strong audience interest, especially for actionable advice tailored to specific investment types. Focusing on tax strategies, crypto-specific pitfalls, and real estate could yield significant viewer interest and channel growth."
+}

@@ -122,7 +122,7 @@ def niche_gate(brief: ResearchBrief, attempt: int, max_attempts: int = 2) -> Gat
 # Called after the script agent produces a script.
 # Answers: is this script good enough to save, or does it need improvement?
 
-MIN_SCRIPT_SCORE = 6        # Below this: send to improvement agent
+MIN_SCRIPT_SCORE = 7        # Below this: send to improvement agent
 MAX_SCRIPT_RETRIES = 2      # Maximum improvement attempts before saving anyway
 
 

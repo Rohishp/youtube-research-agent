@@ -1,0 +1,88 @@
+{
+  "niche": "morning routines for entrepreneurs",
+  "addresses_gap": "Customizable Routines for Different Entrepreneurial Needs",
+  "based_on_idea": "Customizing Your Morning Routine: An Entrepreneur’s Guide",
+  "hook_statement": "Ever felt like morning routines don't fit your busy lifestyle? Discover how to customize a routine perfect for your entrepreneurial journey!",
+  "estimated_duration_minutes": 12.5,
+  "word_count": 1800,
+  "sections": [
+    {
+      "section_type": "hook",
+      "title": "The Problem with One-Size-Fits-All Routines",
+      "script": "Ever felt like morning routines don't fit your busy lifestyle? Imagine waking up each day, dragging yourself through a routine that seems more like a chore than a catalyst for success. You’re not alone. Most morning routines are designed with a one-size-fits-all mentality, missing the unique needs of different entrepreneurs. Today, we're going to change that.",
+      "duration_seconds": 30,
+      "visual_direction": "Close-up of a frustrated entrepreneur glancing at a clock, then switching scenes to them trying various routines with a dissatisfied expression.",
+      "b_roll_notes": "Shots of entrepreneurs with different routines, looking at their watches or checking their phones with a stressed look."
+    },
+    {
+      "section_type": "problem",
+      "title": "The Limits of Generic Routines",
+      "script": "You're losing the first 90 minutes of your day to decisions that don't matter. Every entrepreneur's journey is unique, yet many of us follow routines that don’t sync with our personal energy cycles or business demands. This leads to burnout, reduced productivity, and a lack of fulfillment. What if you could craft a routine that feels tailor-made for your life and business?",
+      "duration_seconds": 90,
+      "visual_direction": "Split screen: left side shows an entrepreneur sluggishly moving through an arbitrary routine, right side shows an entrepreneur energized with a customized plan.",
+      "b_roll_notes": "Montage of different entrepreneurs struggling with typical routines: rushing through breakfast, yawning at a desk, etc."
+    },
+    {
+      "section_type": "agitation",
+      "title": "The Cost of Misaligned Mornings",
+      "script": "Imagine starting your day feeling drained instead of driven. When your routine doesn’t align with your natural rhythms, it’s like swimming against the current. You spend your mornings battling fatigue, leaving you with little energy for the tasks that truly matter. Over time, this misalignment can lead to decreased efficiency, increased stress, and ultimately, burnout.",
+      "duration_seconds": 120,
+      "visual_direction": "Show a day in the life of an entrepreneur: waking up tired, struggling through meetings, missing deadlines, and feeling overwhelmed.",
+      "b_roll_notes": "Scenes of an entrepreneur looking overwhelmed in meetings, struggling to stay awake, and missing out on family time."
+    },
+    {
+      "section_type": "solution_preview",
+      "title": "Craft Your Perfect Routine",
+      "script": "But here's the good news: you can create a morning routine that's as unique as your entrepreneurial journey. Today, I'll guide you through the steps to customize a routine that fits your lifestyle and business needs. Say goodbye to the one-size-fits-all approach and hello to a morning that sets you up for success.",
+      "duration_seconds": 60,
+      "visual_direction": "Dynamic animations illustrating a personalized routine being built from various components like exercise, breakfast, planning.",
+      "b_roll_notes": "Illustrative diagrams of morning schedule blocks being customized with different activities."
+    },
+    {
+      "section_type": "main_points",
+      "title": "Steps to Personalize Your Morning",
+      "script": "Let's dive into the three key steps to personalize your morning routine: \n\nFirst, assess your energy patterns. Track your energy levels throughout the day for a week. Identify when you feel most alert and when you’re naturally low on energy. This will help you decide which tasks to tackle in the morning.\n\nSecond, align your routine with your business goals. Are you aiming for creativity or focus? Structure your morning activities to support these goals. For instance, if creativity is your focus, include activities that stimulate your mind, like reading or brainstorming.\n\nFinally, incorporate flexibility. Life as an entrepreneur is unpredictable. Build in buffer time for unexpected events so that a single disruption doesn’t derail your entire day.",
+      "duration_seconds": 240,
+      "visual_direction": "Each point accompanied by a visual: a graph for energy tracking, a checklist for business goals, and a flexible schedule template.",
+      "b_roll_notes": "Footage of entrepreneurs journaling, setting goals, and adjusting schedules on a planner or digital app."
+    },
+    {
+      "section_type": "evidence",
+      "title": "Real-World Success Stories",
+      "script": "Let’s look at Jane, a tech startup founder. She struggled with a generic routine that left her exhausted by noon. By customizing her mornings based on her energy peaks, she boosted her productivity by 30%. Then there’s Mark, a creative director who found that shifting his brainstorming sessions to mornings when he’s most creative doubled his output.",
+      "duration_seconds": 150,
+      "visual_direction": "Testimonial-style footage of Jane and Mark discussing their success stories with before-and-after comparisons.",
+      "b_roll_notes": "Clips of Jane and Mark in their work environments, animated statistics showing their productivity improvements."
+    },
+    {
+      "section_type": "cta",
+      "title": "Start Your Transformation",
+      "script": "Now it's your turn. Take the first step towards a more productive and fulfilling morning routine. Download our free template to start tracking your energy patterns and customize your routine today. Remember, the key to success is a morning that works for you.",
+      "duration_seconds": 60,
+      "visual_direction": "Close-up of a downloadable template being filled out, overlay with download link and call-to-action text.",
+      "b_roll_notes": "Graphic of a computer screen showing the download process and a person filling out the template."
+    }
+  ],
+  "seo": {
+    "title": "Customizing Your Morning Routine: An Entrepreneur’s Guide",
+    "title_variants": [
+      "Tailor Your Morning Routine for Entrepreneurial Success",
+      "How to Personalize Your Morning as an Entrepreneur"
+    ],
+    "description": "Struggling with generic morning routines? Learn how to craft a personalized routine that boosts your productivity and aligns with your entrepreneurial journey.",
+    "tags": [
+      "morning routine",
+      "entrepreneur",
+      "custom routine",
+      "productivity"
+    ],
+    "thumbnail_concept": "A split image with 'generic routine' on a messy desk and 'custom routine' with organized planner and coffee",
+    "thumbnail_text": "Customize Your Morning"
+  },
+  "production_notes": "Use a DSLR camera for clear visuals, soft natural lighting for a professional look, and incorporate upbeat background music for an energetic tone.",
+  "pattern_interrupt_moments": [
+    "At 2:30 — cut to b-roll of a busy entrepreneur struggling with routine",
+    "At 5:00 — show graphic of energy tracking chart"
+  ],
+  "rewatch_hook": "The promise of a personalized routine that transforms your mornings and boosts success."
+}

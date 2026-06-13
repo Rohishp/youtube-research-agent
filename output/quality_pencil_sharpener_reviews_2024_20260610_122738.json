@@ -1,0 +1,29 @@
+{
+  "niche": "pencil sharpener reviews 2024",
+  "research_attempts": 1,
+  "script_attempts": 2,
+  "niche_gate_decisions": [
+    {
+      "attempt": 1,
+      "action": "proceed",
+      "reason": "Research passed all quality checks",
+      "detail": "Score: 7/10 | Videos: 3 | Gaps: 3"
+    }
+  ],
+  "script_gate_decisions": [
+    {
+      "attempt": 1,
+      "eval_score": 5,
+      "action": "retry",
+      "reason": "Script score 5/10 below threshold (6) — improving"
+    },
+    {
+      "attempt": 2,
+      "eval_score": 9,
+      "action": "proceed",
+      "reason": "Script score 9/10 meets threshold (6)"
+    }
+  ],
+  "final_eval_score": 9,
+  "warnings": []
+}

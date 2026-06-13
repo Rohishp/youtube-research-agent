@@ -1,0 +1,108 @@
+{
+  "run_id": "run_20260611_123505_b7d10d",
+  "niche": "beginner investing mistakes",
+  "status": "failed",
+  "started_at": "2026-06-11T12:35:05.207900",
+  "duration_seconds": 36.89,
+  "total_tokens_input": 15193,
+  "total_tokens_output": 1443,
+  "total_cost_usd": 0.0976,
+  "final_eval_score": null,
+  "final_title": null,
+  "warnings": [],
+  "error": "list index out of range",
+  "stages": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "started_at": "2026-06-11T12:35:05.207900",
+      "duration_seconds": 18.92,
+      "iterations": 5,
+      "tokens_input": 15193,
+      "tokens_output": 1443,
+      "cost_usd": 0.0976,
+      "eval_score": null,
+      "gate_decision": {
+        "gate": "niche_gate",
+        "action": "proceed",
+        "reason": "Research passed all quality checks",
+        "detail": "Score: 8/10 | Videos: 3 | Gaps: 3",
+        "opportunity_score": 8,
+        "videos_analyzed": 3,
+        "gaps_found": 3
+      },
+      "error": null,
+      "tool_calls": [
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "beginner investing mistakes",
+            "max_results": 10
+          },
+          "duration_ms": 466.3,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "investing mistakes to avoid for beginners",
+            "max_results": 5
+          },
+          "duration_ms": 410.3,
+          "success": true,
+          "error": null,
+          "results_count": 5
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "eFf3Yk1B1VE"
+          },
+          "duration_ms": 1146.6,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "gtFR8E2hrPg"
+          },
+          "duration_ms": 1047.3,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "u0sAJ1OnBKU"
+          },
+          "duration_ms": 893.5,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        }
+      ]
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "started_at": "2026-06-11T12:35:24.119712",
+      "duration_seconds": 17.96,
+      "iterations": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cost_usd": 0.0,
+      "eval_score": null,
+      "gate_decision": null,
+      "error": "list index out of range",
+      "tool_calls": []
+    }
+  ]
+}

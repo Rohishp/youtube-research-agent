@@ -74,11 +74,12 @@ def run_script_agent(brief: ResearchBrief) -> VideoScript:
     # The trade-off: streaming is more complex to handle because you must
     # reassemble the chunks into a complete response yourself.
     response = client.chat.completions.create(
-        model=MODEL,
-        messages=messages,
-        max_tokens=4096,
-        temperature=0.7,
-        stream=True,        # ← the one-word change that enables streaming
+    model=MODEL,
+    messages=messages,
+    max_tokens=4096,
+    temperature=0.7,
+    stream=True,
+    stream_options={"include_usage": True},  # ← add this
     )
 
     # Reassemble the streamed chunks into complete text
@@ -86,17 +87,26 @@ def run_script_agent(brief: ResearchBrief) -> VideoScript:
     full_content = ""
     finish_reason = None
 
+    usage = None
+
     for chunk in response:
+        # Guard: the final usage chunk may have empty choices
+        if not chunk.choices:
+            if hasattr(chunk, 'usage') and chunk.usage:
+                usage = chunk.usage
+            continue
+
         delta = chunk.choices[0].delta
 
-        # Print each token as it arrives — this is the streaming UX
         if delta.content:
             print(delta.content, end="", flush=True)
             full_content += delta.content
 
-        # The last chunk carries the finish_reason
         if chunk.choices[0].finish_reason:
             finish_reason = chunk.choices[0].finish_reason
+
+        if hasattr(chunk, 'usage') and chunk.usage:
+            usage = chunk.usage
 
     print()  # newline after streaming completes
     print("-" * 40)

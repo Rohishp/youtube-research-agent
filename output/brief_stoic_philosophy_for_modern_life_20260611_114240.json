@@ -1,0 +1,116 @@
+{
+  "niche": "stoic philosophy for modern life",
+  "opportunity_score": 8,
+  "opportunity_score_reasoning": "The niche has a strong presence with high view counts and a range of engagement with stoic philosophy adapted for current times. However, there are distinct content gaps where demand isn't fully met, suggesting scope for newly framed perspectives on stoicism tailored to current societal challenges.",
+  "top_videos_analyzed": [
+    {
+      "video_id": "EFkyxzJtiv4",
+      "title": "Stoicism: Become Undefeatable",
+      "channel_name": "Aperture",
+      "view_count": 13412567,
+      "like_count": 651743,
+      "comment_count": 8698,
+      "published_at": "2021-04-30T17:30:00Z",
+      "duration": "PT12M52S",
+      "description": "Stoicism helps us steer through past and present storms into calmer and more peaceful waters. This video explores how Stoic philosophy teaches us to remain composed and proactive amidst life's challenges."
+    },
+    {
+      "video_id": "R9OCA6UFE-0",
+      "title": "The philosophy of Stoicism - Massimo Pigliucci",
+      "channel_name": "TED-Ed",
+      "view_count": 11394754,
+      "like_count": 400416,
+      "comment_count": 4891,
+      "published_at": "2017-06-19T15:00:18Z",
+      "duration": "PT5M30S",
+      "description": "Massimo Pigliucci describes the philosophy of Stoicism and how its teachings of virtue, tolerance, and self-control have inspired thinkers through the ages."
+    },
+    {
+      "video_id": "heh5XLwZVOY",
+      "title": "9 Stoic Rules For A Better Life (From Marcus Aurelius)",
+      "channel_name": "Daily Stoic",
+      "view_count": 3402331,
+      "like_count": 119146,
+      "comment_count": 1837,
+      "published_at": "2021-11-05T18:15:01Z",
+      "duration": "PT10M34S",
+      "description": "Explore the Stoic wisdom of Marcus Aurelius and learn practical steps to apply these principles to improve daily life through discipline and virtue."
+    }
+  ],
+  "key_themes": [
+    "Stoic resilience and emotional control",
+    "Application of Stoic virtues in contemporary settings",
+    "The role of Stoicism in personal development and societal well-being"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Stoicism and Mental Health",
+      "explanation": "While many videos touch on personal improvement, few focus specifically on how Stoic principles can directly benefit mental health issues like anxiety and depression.",
+      "estimated_demand": "high",
+      "suggested_video_title": "How Stoic Philosophy Can Help Combat Anxiety and Depression"
+    },
+    {
+      "gap_title": "Stoicism vs. Modern Day Stressors",
+      "explanation": "There is limited content addressing Stoicism's relevance in dealing with specific modern stressors such as social media pressure, economic anxiety, and work-life balance.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Using Stoicism to Navigate Digital Age Stressors"
+    },
+    {
+      "gap_title": "Practical Stoicism for Daily Life",
+      "explanation": "An opportunity exists to provide viewers with actionable, everyday exercises derived from Stoic principles that they can practice to instill philosophy in daily routines.",
+      "estimated_demand": "high",
+      "suggested_video_title": "Daily Stoic Exercises to Enhance Your Life"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "Stoicism for the Modern Mind: Combating Anxiety with Philosophy",
+      "hook": "Feeling overwhelmed by today’s fast-paced world? Discover how ancient Stoicism provides mental clarity.",
+      "target_emotion": "calmness and empowerment",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "Focuses on a prevailing modern issue (anxiety) with a philosophical solution, making it highly relevant and actionable."
+    },
+    {
+      "title": "Unplug: Using Stoic Philosophy to Handle Social Media Stress",
+      "hook": "Drowning in digital chaos? Employ Stoic secrets to create inner peace.",
+      "target_emotion": "reflective and motivated",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Addresses the stress from ubiquitous social media use, a topic that resonates with many."
+    },
+    {
+      "title": "Simple Stoic Rituals for Everyday Strength",
+      "hook": "Want to integrate Stoicism seamlessly into your daily life? Try these easy rituals.",
+      "target_emotion": "inspiration and hope",
+      "estimated_search_volume": "medium",
+      "competition_level": "medium",
+      "why_it_will_work": "Provides tangible, small steps making Stoicism accessible to everyone, enhancing daily routines and effectiveness."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "informative and motivational",
+    "pacing": "moderate to fast-paced",
+    "visual_style": "minimalist visuals with text highlights",
+    "common_hooks": [
+      "Feeling overwhelmed?",
+      "What if I told you...",
+      "Imagine facing challenges unbreakable"
+    ],
+    "words_to_use": [
+      "resilience",
+      "clarity",
+      "mastery"
+    ],
+    "words_to_avoid": [
+      "detached",
+      "superior"
+    ]
+  },
+  "recommended_video_length": "8-12 minutes",
+  "best_upload_days": [
+    "Monday",
+    "Thursday"
+  ],
+  "summary": "The niche of 'stoic philosophy for modern life' has strong engagement with high viewership for content exploring the application of Stoic principles today. By addressing content gaps like Stoicism's impact on mental health and practical daily applications, creators can tap into unmet audience needs. Video ideas focusing on actionable insights and managing modern stressors can enhance engagement and provide valuable guidance for today's challenges."
+}

@@ -1,0 +1,137 @@
+{
+  "niche": "morning routines for entrepreneurs",
+  "opportunity_score": 7,
+  "opportunity_score_reasoning": "The niche 'morning routines for entrepreneurs' is moderately saturated with content focusing on various successful routines from well-known individuals. However, there's an opportunity to specifically tailor content for specific types of entrepreneurs or address content gaps like routines under different constraints (e.g., limited time, working from home).",
+  "top_videos_analyzed": [
+    {
+      "video_id": "9pLk3OU6bOs",
+      "title": "This morning routine is scientifically proven to make you limitless.",
+      "channel_name": "SpoonFedStudy",
+      "view_count": 1281142,
+      "like_count": 55379,
+      "comment_count": 1884,
+      "published_at": "2024-06-05T15:40:14Z",
+      "duration": "PT15M19S",
+      "description": "The video outlines a scientifically-backed 15-minute routine focused on productivity and health."
+    },
+    {
+      "video_id": "eEirzGD525I",
+      "title": "Morning Rituals of an Entrepreneur",
+      "channel_name": "Valuetainment",
+      "view_count": 912685,
+      "like_count": 27305,
+      "comment_count": 1160,
+      "published_at": "2016-08-11T13:00:17Z",
+      "duration": "PT17M8S",
+      "description": "The video shares morning routines of various entrepreneurs and stresses the importance of building momentum."
+    },
+    {
+      "video_id": "lC3Hxx28QY8",
+      "title": "How I Start My Day for PEAK Performance (6 Science-Based Habits)",
+      "channel_name": "RESPIRE",
+      "view_count": 710379,
+      "like_count": 18484,
+      "comment_count": 279,
+      "published_at": "2025-02-22T14:00:06Z",
+      "duration": "PT8M49S",
+      "description": "Focuses on six science-backed habits to enhance productivity, energy, and well-being."
+    },
+    {
+      "video_id": "_s16zjowQGA",
+      "title": "Neuroscientist: Use This Morning Routine To BOOST MOTIVATION and FOCUS",
+      "channel_name": "Motivation2Study",
+      "view_count": 592943,
+      "like_count": 14192,
+      "comment_count": 239,
+      "published_at": "2024-03-18T13:00:07Z",
+      "duration": "PT8M11S",
+      "description": "Neuroscientist Dr. Andrew Huberman details a routine to enhance motivation and focus."
+    },
+    {
+      "video_id": "SELWtQpcy1A",
+      "title": "The \"1 Billion Dollar Morning Routine\" - Habits of the World’s Most Successful People",
+      "channel_name": "Be Inspired",
+      "view_count": 8827258,
+      "like_count": 236181,
+      "comment_count": 4992,
+      "published_at": "2019-01-22T11:04:53Z",
+      "duration": "PT7M28S",
+      "description": "Outlines morning habits of highly successful individuals, emphasizing science and proactive routines."
+    }
+  ],
+  "key_themes": [
+    "Science-backed routines",
+    "The importance of consistency",
+    "Energy and motivation"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Morning Routines for Work-from-home Entrepreneurs",
+      "explanation": "While there is some content about general routines, there is a lack of focus on entrepreneurs working remotely.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Optimizing Your Morning Routine for Work-from-Home Success"
+    },
+    {
+      "gap_title": "Quick 5-Minute Morning Routines",
+      "explanation": "Many routines are lengthy and not all entrepreneurs have time in the morning for elaborate setups.",
+      "estimated_demand": "high",
+      "suggested_video_title": "5-Minute Morning Routine Hacks for Busy Entrepreneurs"
+    },
+    {
+      "gap_title": "Routines Tailored to Different Entrepreneur Types (e.g., Tech vs. Creative)",
+      "explanation": "Distinct entrepreneur types may need different routine strategies that fit their unique challenges.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Tailor-Made Morning Routines for Different Types of Entrepreneurs"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "How to Craft Your Perfect Morning Routine in Just 5 Minutes",
+      "hook": "Feeling overwhelmed by long routines? Transform your mornings with this quick and powerful guide!",
+      "target_emotion": "Relief",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "Addresses a common pain point for entrepreneurs with limited time and offers a quick solution."
+    },
+    {
+      "title": "Morning Rituals to Ignite Creativity for Entrepreneurs",
+      "hook": "Unleash your creativity every morning with these simple rituals!",
+      "target_emotion": "Inspiration",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Targets creative entrepreneurs specifically, who may feel underserved by general advice."
+    },
+    {
+      "title": "Remote Work Morning Routine: Start Your Day Right",
+      "hook": "Make working from home feel productive right from your morning start!",
+      "target_emotion": "Motivation",
+      "estimated_search_volume": "medium",
+      "competition_level": "medium",
+      "why_it_will_work": "With remote work on the rise, this caters to a growing demographic in need of specific guidance."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "Informative and motivational",
+    "pacing": "Moderate to fast",
+    "visual_style": "Clean, professional with engaging visuals",
+    "common_hooks": [
+      "Transform your life",
+      "Science-backed tips",
+      "Maximize your potential"
+    ],
+    "words_to_use": [
+      "optimize",
+      "boost"
+    ],
+    "words_to_avoid": [
+      "lazy",
+      "impossible"
+    ]
+  },
+  "recommended_video_length": "8-15 minutes",
+  "best_upload_days": [
+    "Monday",
+    "Tuesday"
+  ],
+  "summary": "The 'morning routines for entrepreneurs' niche has robust content, yet opportunities exist in targeting underserved segments like remote workers and providing highly tailored advice. Successful videos balance scientific insights with actionable steps, appealing to viewers' desires to improve productivity and achieve personal growth. Content should focus on quick actionable tips, personalization, and aligning routines with specific entrepreneur profiles."
+}

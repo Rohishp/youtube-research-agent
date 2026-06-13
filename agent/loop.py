@@ -1,87 +1,69 @@
 # agent/loop.py
 #
-# THIS IS THE MOST IMPORTANT FILE IN THE PROJECT.
-# Read it carefully. This IS what an agent is.
+# The core research agent loop — now tracer-aware.
 #
-# The agent loop:
-# 1. Send the task + available tools to the model
-# 2. Model decides: "I need to call a tool" OR "I'm done, here's my answer"
-# 3. If tool call: execute it, add the result to the conversation, go to step 1
-# 4. If done: parse the final output and return it
+# The only change from the previous version:
+# - run_agent() accepts an optional `tracer` parameter
+# - _execute_tool() records timing and results to the tracer
+# - The loop records token usage from every API response
 #
-# ── KEY DIFFERENCE vs Anthropic API ──────────────────────────────────────────
-# Anthropic:  system prompt is a separate parameter outside messages[]
-#             tool results go as a "user" role message with type="tool_result"
-#             stop reasons: "end_turn" | "tool_use"
-#
-# OpenAI:     system prompt is the FIRST message in messages[] with role="system"
-#             tool results go as their OWN message with role="tool"
-#             stop reasons: "stop" | "tool_calls"
-#
-# Same concept, different wire format. The loop logic is identical.
-# ─────────────────────────────────────────────────────────────────────────────
+# Everything else is identical. The tracer is purely additive —
+# if no tracer is passed, the agent runs exactly as before.
+# This is the correct way to add observability: don't change the logic,
+# just add recording alongside it.
 
 import json
+import time
+from typing import Optional, TYPE_CHECKING
 from openai import OpenAI
 from agent.tools import TOOL_SCHEMAS
 from agent.prompts import SYSTEM_PROMPT, build_user_prompt
 from tools.youtube_search import search_youtube
 from tools.transcript import get_transcript
-from tools.transcript_store import save_transcript   # ← NEW
+from tools.transcript_store import save_transcript
 from models.schemas import ResearchBrief
 
+if TYPE_CHECKING:
+    from observability.tracer import Tracer
 
-# gpt-4o is the best choice for agents — strong tool-calling decisions.
-# gpt-4o-mini works too and is 10x cheaper, but makes worse multi-step decisions.
-# Switch to "gpt-4o-mini" if you want to save credits during development.
 MODEL = "gpt-4o"
-
-# Initialize the OpenAI client once at module level.
-# It automatically reads OPENAI_API_KEY from the environment.
 client = OpenAI()
 
 
-
-
-def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
+def run_agent(
+    niche: str,
+    max_iterations: int = 20,
+    tracer: Optional["Tracer"] = None,
+) -> ResearchBrief:
     """
     Run the research agent for a given niche.
 
-    OpenAI conversation structure grows like this:
-
-        [system]                    ← instructions, never changes
-        [user]                      ← the research request
-        [assistant + tool_calls]    ← model decides to search YouTube
-        [tool]                      ← search result comes back
-        [tool]                      ← (if multiple tools called in one turn)
-        [assistant + tool_calls]    ← model decides to get a transcript
-        [tool]                      ← transcript comes back
-        ... (repeats until done)
-        [assistant]                 ← model writes final JSON brief
-
-    The key insight: we are the memory. The model has no state between calls.
-    We pass the entire conversation every single time.
+    Parameters
+    ----------
+    niche : str
+        The YouTube niche to research.
+    max_iterations : int
+        Safety limit on agent loop iterations.
+    tracer : Tracer, optional
+        If provided, records timing, token usage, and tool calls.
+        If None, agent runs normally with no observability overhead.
     """
     print(f"\n{'='*60}")
     print(f"Starting research agent for niche: '{niche}'")
     print(f"{'='*60}\n")
 
-    # Normalise niche name once — used when saving transcripts so the
-    # RAG agent receives a clean niche label instead of a video ID.
-    # e.g. "Stoic Philosophy for Modern Life" → "stoic_philosophy_for_modern_life"
     normalised_niche = niche.lower().replace(" ", "_")
 
-    # ── INNER TOOL EXECUTOR ───────────────────────────────────────────────────
-    # Defined as a closure inside run_agent so it can access normalised_niche
-    # without us having to pass it as an argument on every call.
-    #
-    # Why a closure instead of a module-level function?
-    # The module-level execute_tool() doesn't know which niche is being researched.
-    # By defining it here, it automatically captures normalised_niche from the
-    # enclosing scope. This is cleaner than using a global variable.
-    # ─────────────────────────────────────────────────────────────────────────
     def _execute_tool(tool_name: str, tool_input: dict) -> str:
         print(f"  → Calling tool: {tool_name}({json.dumps(tool_input, indent=2)})")
+
+        # ── TIME THE TOOL CALL ────────────────────────────────────────────────
+        # This is your Q1 answer: start timer before, end timer after.
+        # perf_counter gives sub-millisecond precision.
+        tool_start = time.perf_counter()
+        success = True
+        error_msg = None
+        result = {}
 
         try:
             if tool_name == "search_youtube":
@@ -91,30 +73,39 @@ def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
                 )
             elif tool_name == "get_transcript":
                 result = get_transcript(video_id=tool_input["video_id"])
-
-                # Save transcript with the correct niche label.
-                # Previously this called save_transcript(result) without a niche,
-                # causing video IDs to appear as niche names in the RAG knowledge base.
-                # Now the niche is passed explicitly from the enclosing run_agent scope.
                 if result.get("transcript"):
                     save_transcript(result, niche=normalised_niche)
             else:
                 result = {"error": f"Unknown tool: {tool_name}"}
+                success = False
 
             result_str = json.dumps(result, ensure_ascii=False)
             preview = result_str[:200] + "..." if len(result_str) > 200 else result_str
             print(f"  ← Tool result preview: {preview}")
-            return result_str
 
         except Exception as e:
             error_msg = f"Tool execution failed: {str(e)}"
             print(f"  ✗ {error_msg}")
-            return json.dumps({"error": error_msg})
+            result_str = json.dumps({"error": error_msg})
+            success = False
 
-    # ── OPENAI DIFFERENCE #1 ─────────────────────────────────────────────────
-    # System prompt goes INSIDE messages[] as the first entry with role="system"
-    # In Anthropic API it's a separate `system=` parameter outside messages[]
-    # ─────────────────────────────────────────────────────────────────────────
+        # ── RECORD TO TRACER ──────────────────────────────────────────────────
+        duration_ms = (time.perf_counter() - tool_start) * 1000
+
+        if tracer:
+            tracer.record_tool_call(
+                tool=tool_name,
+                tool_input=tool_input,
+                duration_ms=duration_ms,
+                success=success,
+                error=error_msg,
+                results_count=result.get("total_found") if tool_name == "search_youtube" else None,
+                chars_returned=result.get("char_count") if tool_name == "get_transcript" else None,
+                saved_to_disk=bool(result.get("transcript")) if tool_name == "get_transcript" else None,
+            )
+
+        return result_str
+
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user",   "content": build_user_prompt(niche)},
@@ -126,28 +117,28 @@ def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
         iteration += 1
         print(f"\n[Iteration {iteration}] Calling {MODEL}...")
 
-        # Call the OpenAI API.
-        # We pass the full conversation every time — the model is stateless.
         response = client.chat.completions.create(
             model=MODEL,
             messages=messages,
             tools=TOOL_SCHEMAS,
-            tool_choice="auto",   # Model decides when to use tools vs stop
+            tool_choice="auto",
             max_tokens=4096,
         )
 
-        # OpenAI wraps the response in choices[0].
-        # In Anthropic API you access response.content directly.
         message = response.choices[0].message
         finish_reason = response.choices[0].finish_reason
 
         print(f"[Iteration {iteration}] Finish reason: {finish_reason}")
 
-        # ── OPENAI DIFFERENCE #2 ─────────────────────────────────────────────
-        # We must add the assistant message back to history BEFORE adding tool results.
-        # The assistant message may contain both text content AND tool_calls.
-        # We rebuild it as a plain dict for clarity.
-        # ─────────────────────────────────────────────────────────────────────
+        # ── RECORD TOKEN USAGE ────────────────────────────────────────────────
+        # Every API response includes token counts.
+        # We record them so we know what each stage costs.
+        if tracer and response.usage:
+            tracer.record_tokens(
+                input_tokens=response.usage.prompt_tokens,
+                output_tokens=response.usage.completion_tokens,
+            )
+
         assistant_message = {"role": "assistant", "content": message.content}
         if message.tool_calls:
             assistant_message["tool_calls"] = [
@@ -163,69 +154,42 @@ def run_agent(niche: str, max_iterations: int = 20) -> ResearchBrief:
             ]
         messages.append(assistant_message)
 
-        # ── CASE 1: Model is done ─────────────────────────────────────────────
         if finish_reason == "stop":
             print("\n[Agent] Research complete. Parsing output...")
             return parse_final_output(message.content or "", niche)
 
-        # ── CASE 2: Model wants to use tools ──────────────────────────────────
-        # finish_reason == "tool_calls" means the model made one or more tool calls
-        # (equivalent to "tool_use" in Anthropic API)
         if finish_reason == "tool_calls" and message.tool_calls:
             for tool_call in message.tool_calls:
                 tool_name  = tool_call.function.name
-                # arguments come back as a JSON string — we parse it to a dict
                 tool_input = json.loads(tool_call.function.arguments)
-
                 result = _execute_tool(tool_name, tool_input)
-
-                # ── OPENAI DIFFERENCE #3 ─────────────────────────────────────
-                # Tool results get their OWN message with role="tool"
-                # In Anthropic API they go inside a "user" message as content blocks
-                # tool_call_id links this result back to the tool_call that requested it
-                # ─────────────────────────────────────────────────────────────
                 messages.append({
                     "role":         "tool",
                     "tool_call_id": tool_call.id,
                     "content":      result,
                 })
-
-            # Loop continues — model will see these results and decide next action
             continue
 
-        # ── CASE 3: Unexpected finish reason ──────────────────────────────────
         print(f"[Warning] Unexpected finish reason: {finish_reason}")
         break
 
     raise RuntimeError(
-        f"Agent did not complete within {max_iterations} iterations. "
-        "Check your system prompt or increase max_iterations."
+        f"Agent did not complete within {max_iterations} iterations."
     )
 
 
 def parse_final_output(text: str, niche: str) -> ResearchBrief:
-    """
-    Parse the agent's final text output into a validated ResearchBrief.
-
-    Models sometimes add explanation text before or after the JSON, or wrap
-    it in markdown code fences. We try three extraction strategies in order:
-      1. Extract JSON from inside a ```json ... ``` block
-      2. Extract the first {...} block found anywhere in the text
-      3. Try the raw text as-is
-    """
+    """Parse agent output into a validated ResearchBrief."""
     import re
 
     text = text.strip()
     json_str = None
 
-    # Strategy 1: JSON inside a markdown code fence (```json ... ``` or ``` ... ```)
     fence_match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', text, re.DOTALL)
     if fence_match:
         json_str = fence_match.group(1)
         print("[Parser] Extracted JSON from markdown code fence")
 
-    # Strategy 2: Find the first { and the last } in the whole text
-    # This handles cases where the model writes text before/after the JSON
     if json_str is None:
         first_brace = text.find('{')
         last_brace  = text.rfind('}')
@@ -233,7 +197,6 @@ def parse_final_output(text: str, niche: str) -> ResearchBrief:
             json_str = text[first_brace:last_brace + 1]
             print("[Parser] Extracted JSON by finding first { and last }")
 
-    # Strategy 3: Use the raw text
     if json_str is None:
         json_str = text
         print("[Parser] Attempting to parse raw text as JSON")

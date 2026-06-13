@@ -1,0 +1,136 @@
+{
+  "run_id": "run_20260611_115641_6a1bc2",
+  "niche": "beginner investing mistakes",
+  "status": "completed",
+  "started_at": "2026-06-11T11:56:41.321138",
+  "duration_seconds": 41.55,
+  "total_tokens_input": 18652,
+  "total_tokens_output": 1686,
+  "total_cost_usd": 0.1185,
+  "final_eval_score": 7,
+  "final_title": "Mastering Your Emotions: The Key to Successful Investing",
+  "warnings": [],
+  "error": null,
+  "stages": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "started_at": "2026-06-11T11:56:41.321138",
+      "duration_seconds": 23.33,
+      "iterations": 7,
+      "tokens_input": 18652,
+      "tokens_output": 1686,
+      "cost_usd": 0.1185,
+      "eval_score": null,
+      "gate_decision": {
+        "gate": "niche_gate",
+        "action": "proceed",
+        "reason": "Research passed all quality checks",
+        "detail": "Score: 8/10 | Videos: 5 | Gaps: 3",
+        "opportunity_score": 8,
+        "videos_analyzed": 5,
+        "gaps_found": 3
+      },
+      "error": null,
+      "tool_calls": [
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "beginner investing mistakes",
+            "max_results": 10
+          },
+          "duration_ms": 545.3,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "investing mistakes to avoid",
+            "max_results": 5
+          },
+          "duration_ms": 426.9,
+          "success": true,
+          "error": null,
+          "results_count": 5
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "eFf3Yk1B1VE"
+          },
+          "duration_ms": 1020.7,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "gtFR8E2hrPg"
+          },
+          "duration_ms": 904.8,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "u0sAJ1OnBKU"
+          },
+          "duration_ms": 1045.1,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "UdclKIQ1qZ8"
+          },
+          "duration_ms": 1025.7,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "7AKta9I8KhA"
+          },
+          "duration_ms": 1069.7,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        }
+      ]
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "started_at": "2026-06-11T11:57:04.644467",
+      "duration_seconds": 18.21,
+      "iterations": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cost_usd": 0.0,
+      "eval_score": 7,
+      "gate_decision": {
+        "gate": "script_gate",
+        "action": "proceed",
+        "reason": "Script score 7/10 meets threshold (6)",
+        "detail": "Script passed quality gate on attempt 1.",
+        "eval_score": 7
+      },
+      "error": null,
+      "tool_calls": []
+    }
+  ]
+}

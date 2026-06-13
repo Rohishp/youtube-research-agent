@@ -1,0 +1,108 @@
+{
+  "niche": "stoic philosophy for modern life",
+  "opportunity_score": 7,
+  "opportunity_score_reasoning": "The niche 'stoic philosophy for modern life' shows consistent interest and reliability in terms of viewership and engagement, indicating a moderate demand for content.",
+  "top_videos_analyzed": [
+    {
+      "video_id": "Yhn1Fe8cT0Q",
+      "title": "Stoicism as a philosophy for an ordinary life | Massimo Pigliucci | TEDxAthens",
+      "channel_name": "TEDx Talks",
+      "view_count": 2659685,
+      "like_count": 62670,
+      "comment_count": 1496,
+      "published_at": "2018-09-25T21:16:37Z",
+      "duration": "PT18M39S",
+      "description": "How to change your life for the better by practicing ancient Greco-Roman philosophy as a way of life."
+    },
+    {
+      "video_id": "R9OCA6UFE-0",
+      "title": "The philosophy of Stoicism - Massimo Pigliucci",
+      "channel_name": "TED-Ed",
+      "view_count": 11394894,
+      "like_count": 400418,
+      "comment_count": 4891,
+      "published_at": "2017-06-19T15:00:18Z",
+      "duration": "PT5M30S",
+      "description": "View the full lesson discussing Stoic philosophy as a means to live the best possible life."
+    },
+    {
+      "video_id": "LGXRpbDuDGE",
+      "title": "When Life Hurts, Care Less About It | The Philosophy of Marcus Aurelius",
+      "channel_name": "Einzelgänger",
+      "view_count": 4626487,
+      "like_count": 138771,
+      "comment_count": 2794,
+      "published_at": "2023-01-12T15:00:20Z",
+      "duration": "PT14M8S",
+      "description": "How Marcus Aurelius approached life by focusing on core responsibilities and ignoring trivial distractions."
+    }
+  ],
+  "key_themes": [
+    "practical application of stoicism",
+    "mental resilience",
+    "philosophical reasoning"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Applying Stoicism in the Workplace",
+      "explanation": "Few videos address how to directly apply Stoic principles in a professional setting, which could be a highly relevant topic given workplace stress pressures.",
+      "estimated_demand": "high",
+      "suggested_video_title": "Stoicism at Work: Increasing Productivity and Reducing Stress"
+    },
+    {
+      "gap_title": "Stoicism for Mental Health",
+      "explanation": "While Stoicism is discussed broadly, specific strategies for managing mental health challenges using Stoicism can attract viewers looking for practical help.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Using Stoic Philosophy to Manage Anxiety"
+    },
+    {
+      "gap_title": "Daily Stoic Habits",
+      "explanation": "Focused daily habits infused with Stoic philosophy are scarcely detailed, leaving an audience interested in life-hacking for modern convenience.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "5 Stoic Morning Habits to Transform Your Day"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "Stoicism at Work: Increasing Productivity and Reducing Stress",
+      "hook": "Discover ancient philosophical techniques that can drastically change your workplace dynamics today.",
+      "target_emotion": "relief",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "Workplace stress is perennial, and practical Stoic applications can tap into a growing need for new productivity strategies."
+    },
+    {
+      "title": "Using Stoic Philosophy to Manage Anxiety",
+      "hook": "Are you looking for a grounded way to handle modern life's pressures? Stoicism offers a time-tested solution.",
+      "target_emotion": "calm",
+      "estimated_search_volume": "medium",
+      "competition_level": "medium",
+      "why_it_will_work": "Mental health remains a top priority, and combining it with popular Stoic philosophy provides a unique, appealing take."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "informative and calm",
+    "pacing": "steady and reflective",
+    "visual_style": "minimalistic with philosophical motifs",
+    "common_hooks": [
+      "Have you ever wondered how ancient wisdom applies to us today?",
+      "Ever felt overwhelmed by modern life's challenges?",
+      "Imagine living with the resilience of a Stoic"
+    ],
+    "words_to_use": [
+      "resilience",
+      "balance",
+      "wisdom"
+    ],
+    "words_to_avoid": [
+      "miracle",
+      "quick fix"
+    ]
+  },
+  "recommended_video_length": "8-12 minutes",
+  "best_upload_days": [
+    "Tuesday",
+    "Thursday"
+  ],
+  "summary": "The niche of 'stoic philosophy for modern life' has a consistent audience and plenty of opportunities for growth, especially around practical applications in various aspects of life. Content focusing on workplace stress and daily routines filled with stoic principles align well with current viewing trends and untapped needs."
+}

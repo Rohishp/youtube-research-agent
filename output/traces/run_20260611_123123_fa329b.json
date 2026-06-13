@@ -1,0 +1,130 @@
+{
+  "run_id": "run_20260611_123123_fa329b",
+  "niche": "stoic philosophy for modern life",
+  "status": "failed",
+  "started_at": "2026-06-11T12:31:23.807830",
+  "duration_seconds": 53.41,
+  "total_tokens_input": 19891,
+  "total_tokens_output": 1769,
+  "total_cost_usd": 0.126,
+  "final_eval_score": null,
+  "final_title": null,
+  "warnings": [],
+  "error": "list index out of range",
+  "stages": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "started_at": "2026-06-11T12:31:23.807830",
+      "duration_seconds": 36.82,
+      "iterations": 7,
+      "tokens_input": 19891,
+      "tokens_output": 1769,
+      "cost_usd": 0.126,
+      "eval_score": null,
+      "gate_decision": {
+        "gate": "niche_gate",
+        "action": "proceed",
+        "reason": "Research passed all quality checks",
+        "detail": "Score: 8/10 | Videos: 5 | Gaps: 3",
+        "opportunity_score": 8,
+        "videos_analyzed": 5,
+        "gaps_found": 3
+      },
+      "error": null,
+      "tool_calls": [
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "stoic philosophy for modern life",
+            "max_results": 10
+          },
+          "duration_ms": 532.3,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "applying stoic philosophy today",
+            "max_results": 10
+          },
+          "duration_ms": 496.8,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "EFkyxzJtiv4"
+          },
+          "duration_ms": 1197.6,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "R9OCA6UFE-0"
+          },
+          "duration_ms": 1298.9,
+          "success": true,
+          "error": null,
+          "chars_returned": 3997,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "tv6W0Nv5ev0"
+          },
+          "duration_ms": 1253.0,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "LGXRpbDuDGE"
+          },
+          "duration_ms": 1029.4,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "heh5XLwZVOY"
+          },
+          "duration_ms": 1649.5,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        }
+      ]
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "started_at": "2026-06-11T12:32:00.626768",
+      "duration_seconds": 16.59,
+      "iterations": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cost_usd": 0.0,
+      "eval_score": null,
+      "gate_decision": null,
+      "error": "list index out of range",
+      "tool_calls": []
+    }
+  ]
+}

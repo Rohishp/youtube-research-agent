@@ -1,0 +1,88 @@
+{
+  "niche": "morning routines for entrepreneurs",
+  "addresses_gap": "Quick 5-Minute Morning Routines",
+  "based_on_idea": "How to Craft Your Perfect Morning Routine in Just 5 Minutes",
+  "hook_statement": "You're wasting your mornings with routines that take too long. Here's how to transform your start in just 5 minutes.",
+  "estimated_duration_minutes": 10.0,
+  "word_count": 1500,
+  "sections": [
+    {
+      "section_type": "hook",
+      "title": "Transform Your Mornings in Just 5 Minutes",
+      "script": "You're wasting your mornings with routines that take too long. Here's how to transform your start in just 5 minutes.",
+      "duration_seconds": 30,
+      "visual_direction": "Start with a split screen: on the left, an entrepreneur struggling with multiple alarms and a chaotic start; on the right, a calm and collected individual finishing a quick, effective routine.",
+      "b_roll_notes": "Footage of busy city morning vs. serene sunrise with soft music."
+    },
+    {
+      "section_type": "problem",
+      "title": "The Problem with Lengthy Routines",
+      "script": "Most entrepreneurs believe that the longer their morning routine, the more productive their day will be. But here's the harsh reality: extensive routines can actually drain your energy before the workday even begins. You're losing precious time on activities that might not even align with your goals.",
+      "duration_seconds": 90,
+      "visual_direction": "Show a montage of people performing long routines, looking at their watches anxiously.",
+      "b_roll_notes": "Clips of individuals rushing through yoga, meditation, and breakfast prep."
+    },
+    {
+      "section_type": "agitation",
+      "title": "The Cost of Wasting Time",
+      "script": "Imagine starting every day feeling behind. The stress mounts as your to-do list grows before you've even finished your coffee. These lengthy routines can leave you frazzled and unfocused, ultimately impacting your productivity and creativity throughout the day.",
+      "duration_seconds": 90,
+      "visual_direction": "Close-up on a clock ticking, then shift to a person overwhelmed at their desk.",
+      "b_roll_notes": "Footage of messy desks, cluttered schedules, and stressed expressions."
+    },
+    {
+      "section_type": "solution_preview",
+      "title": "The 5-Minute Game Changer",
+      "script": "But what if you could flip the script? What if you could craft a morning routine that takes as little as 5 minutes and sets you up for success? In this video, I'm going to show you how to optimize those first few minutes of your day to boost your energy, focus, and creativity.",
+      "duration_seconds": 60,
+      "visual_direction": "Show fast-paced clips of a person completing a streamlined routine efficiently.",
+      "b_roll_notes": "Snappy clips of a person doing quick stretches, preparing a simple breakfast, and reviewing a to-do list."
+    },
+    {
+      "section_type": "main_points",
+      "title": "Crafting Your 5-Minute Morning Routine",
+      "script": "First, let's start with a quick mental clarity exercise. Spend one minute focusing on your breath. This simple practice helps center your mind and eliminate morning fog. Next, move on to a one-minute stretch. Just a few dynamic stretches can help wake up your body and increase blood flow. For the third minute, hydrate. A glass of water kickstarts your metabolism and hydrates your body after a night's rest. Fourth, simplify your breakfast. A quick, nutritious option like a banana or a handful of nuts can provide immediate energy. Finally, spend your last minute looking at your top goal for the day. Visualize completing it successfully. This mental exercise aligns your mind with your priorities.",
+      "duration_seconds": 300,
+      "visual_direction": "Each tip transitions with a slide showing the time and activity. Example: 'Minute 1: Breathing Exercise' with a timer animation.",
+      "b_roll_notes": "Demonstrate each step with clear, engaging visuals of someone performing these actions."
+    },
+    {
+      "section_type": "evidence",
+      "title": "Why This Works",
+      "script": "Studies show that short, focused routines can drastically improve your morning productivity. According to research from the Journal of Applied Psychology, starting your day with brief, concentrated activities can enhance your cognitive function and mood throughout the day.",
+      "duration_seconds": 120,
+      "visual_direction": "Overlay key study findings on screen while showing a person feeling accomplished and ready for work.",
+      "b_roll_notes": "Graphs illustrating productivity levels with and without the routine."
+    },
+    {
+      "section_type": "cta",
+      "title": "Make It Your Own",
+      "script": "Now it's your turn. Try this 5-minute morning routine for a week and observe how it transforms your day. Share your results in the comments below and let's optimize our mornings together!",
+      "duration_seconds": 60,
+      "visual_direction": "Encouraging animation with a call to action overlay: 'Comment Your Experience!'",
+      "b_roll_notes": "Engaging visuals of happy and energetic people starting their day."
+    }
+  ],
+  "seo": {
+    "title": "How to Craft Your Perfect Morning Routine in Just 5 Minutes",
+    "title_variants": [
+      "5-Minute Morning Routine Hacks",
+      "Quick Morning Routines for Entrepreneurs"
+    ],
+    "description": "Transform your mornings in just 5 minutes with this powerful routine designed for busy entrepreneurs. Say goodbye to lengthy routines and hello to productivity.",
+    "tags": [
+      "morning routine",
+      "entrepreneurs",
+      "5-minute routine",
+      "productivity"
+    ],
+    "thumbnail_concept": "A stopwatch with '5 Minutes' on it, overlayed on a sunrise background with a person stretching.",
+    "thumbnail_text": "5-Minute Morning"
+  },
+  "production_notes": "Use a bright, natural lighting setup to enhance the motivational tone. Quick cuts and upbeat music will maintain energy.",
+  "pattern_interrupt_moments": [
+    "At 1:00 — cut to b-roll of a busy city",
+    "At 4:30 — flash quick tips as text on screen"
+  ],
+  "rewatch_hook": "The promise of a transformed day with just a 5-minute routine will encourage viewers to revisit and internalize the steps."
+}

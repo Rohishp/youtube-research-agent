@@ -1,0 +1,22 @@
+{
+  "run_id": "run_20260613_031542_aaf83c",
+  "niche": "morning routines for entrepreneurs",
+  "status": "created",
+  "created_at": "2026-06-13T03:15:42.508373",
+  "research_brief": null,
+  "research_attempts": 0,
+  "research_query_used": null,
+  "video_script": null,
+  "script_attempts": 0,
+  "eval_score": null,
+  "eval_breakdown": null,
+  "eval_feedback": null,
+  "gate_history": [],
+  "stage_timings": [],
+  "total_tokens_input": 0,
+  "total_tokens_output": 0,
+  "total_cost_usd": 0.0,
+  "duration_seconds": 0.0,
+  "warnings": [],
+  "error": null
+}

@@ -1,0 +1,90 @@
+{
+  "niche": "ADHD productivity tips",
+  "addresses_gap": "ADHD Productivity Tips for Specific Professions",
+  "based_on_idea": "ADHD at Work: Productivity Hacks for Different Professions",
+  "hook_statement": "You're probably doing your workday wrong if you have ADHD. Let's fix that with tailor-made strategies.",
+  "estimated_duration_minutes": 12.0,
+  "word_count": 1850,
+  "sections": [
+    {
+      "section_type": "hook",
+      "title": "You're Doing Your Workday Wrong",
+      "script": "You're probably doing your workday wrong if you have ADHD. Let's fix that with tailor-made strategies. Whether you're a teacher, a software developer, or a healthcare professional, the way you approach your tasks can make or break your productivity.",
+      "duration_seconds": 30,
+      "visual_direction": "Split screen showing different professionals (teacher, developer, nurse) struggling with tasks.",
+      "b_roll_notes": "Footage of a teacher looking frustrated at a desk, a developer distracted at a computer, a nurse overwhelmed with charts."
+    },
+    {
+      "section_type": "problem",
+      "title": "The Unique Challenges of ADHD in Different Jobs",
+      "script": "Each profession comes with its own set of challenges, especially when you add ADHD into the mix. Teachers might struggle with maintaining focus amidst classroom chaos. Developers can be overwhelmed by the vast amount of information they need to process. Healthcare workers face the constant pressure of time management and attention to detail. These challenges can lead to decreased motivation and a sense of failure. But it doesn't have to be this way.",
+      "duration_seconds": 120,
+      "visual_direction": "Show scenes in each work environment: chaotic classroom, cluttered coding screen, busy hospital floor.",
+      "b_roll_notes": "Footage of a classroom with kids, a developer with multiple screens, a nurse in a fast-paced hospital ward."
+    },
+    {
+      "section_type": "agitation",
+      "title": "The Cost of Untailored Work Strategies",
+      "script": "If you continue using generic productivity methods, you're likely wasting time and energy. This can result in burnout, missed deadlines, and a constant feeling of being overwhelmed. Imagine ending each day exhausted and unfulfilled. Not only does this affect your professional life, but it also spills over into your personal time, robbing you of peace and satisfaction.",
+      "duration_seconds": 120,
+      "visual_direction": "Cut to scenes of individuals looking defeated at the end of the workday, juxtaposed with happy families or relaxing activities they miss out on.",
+      "b_roll_notes": "Footage of a tired teacher grading papers late, a developer staring blankly at a screen, a nurse missing a family dinner."
+    },
+    {
+      "section_type": "solution_preview",
+      "title": "Here's What You're About to Discover",
+      "script": "We're going to explore productivity hacks customized for your specific profession. You'll learn how to harness your ADHD to boost motivation and enhance focus. Imagine a workday where you feel in control, productive, and ready to tackle any challenge that comes your way.",
+      "duration_seconds": 90,
+      "visual_direction": "Show snippets of each professional successfully managing their day: a teacher efficiently leading a class, a developer focused on coding, a nurse calmly handling patient care.",
+      "b_roll_notes": "Footage of positive work outcomes, like a teacher engaging students, a developer solving a problem, a nurse efficiently managing time."
+    },
+    {
+      "section_type": "main_points",
+      "title": "Tailored Strategies for Different Professions",
+      "script": "Let's dive into specific strategies for your profession. \n\nFor teachers, one effective strategy is to use visual schedules. These help maintain focus and provide a clear roadmap of the day. Pair this with chunking tasks into smaller, manageable parts to avoid overwhelm. \n\nFor software developers, noise-canceling headphones can be a game-changer. They help block out distractions, allowing you to enter a state of deep focus. Utilize tools like Trello or Asana to keep track of tasks and deadlines, enhancing motivation through visual progress tracking. \n\nHealthcare professionals can benefit from using time-blocking techniques. Allocate specific times for tasks and stick to them rigorously to manage time pressure. Also, practice mindfulness to enhance attention to detail and reduce stress. \n\nEach of these strategies is designed to align with the unique challenges of your profession, turning potential ADHD pitfalls into strengths.",
+      "duration_seconds": 300,
+      "visual_direction": "Show each strategy in action: a teacher using a visual schedule, a developer with headphones and Trello on screen, a nurse time-blocking tasks.",
+      "b_roll_notes": "Footage of teachers organizing with visual aids, developers focused with headphones, nurses efficiently managing time."
+    },
+    {
+      "section_type": "evidence",
+      "title": "Real Success Stories",
+      "script": "Meet Alex, a teacher who transformed his workday by implementing visual schedules and task chunking. He reports feeling more in control and less stressed. \n\nThen there's Sam, a developer, who shares how noise-canceling headphones and task management apps have doubled his productivity levels. \n\nAnd finally, we have Jamie, a nurse who turned to time-blocking and mindfulness, finding a balance between work demands and personal life. \n\nThese stories aren't just anecdotes; they're proof that with the right strategies, ADHD can be managed effectively, leading to a more fulfilling work experience.",
+      "duration_seconds": 180,
+      "visual_direction": "Show testimonials from each person in their work environment, displaying their newfound success and productivity.",
+      "b_roll_notes": "Footage of Alex teaching confidently, Sam coding efficiently, Jamie calmly handling patient care."
+    },
+    {
+      "section_type": "cta",
+      "title": "Take Action Today",
+      "script": "Ready to revolutionize your workday? Start by identifying which strategies resonate with your profession and try them out. Share your experiences in the comments, and let's create a community of shared insights and support. Remember, with the right approach, ADHD can enhance your productivity, not hinder it. Hit subscribe for more tailored ADHD productivity tips.",
+      "duration_seconds": 60,
+      "visual_direction": "End with a call-to-action screen with text prompts to comment and subscribe, featuring a montage of previous success stories.",
+      "b_roll_notes": "Footage of viewer comments popping up, subscribe button animation."
+    }
+  ],
+  "seo": {
+    "title": "ADHD at Work: Productivity Hacks for Different Professions",
+    "title_variants": [
+      "Tailored ADHD Strategies for Your Profession",
+      "Boost Work Productivity with ADHD"
+    ],
+    "description": "Transform your workday with ADHD-friendly strategies tailored to your profession. Discover tips that align with your unique challenges and boost your productivity.",
+    "tags": [
+      "ADHD",
+      "productivity",
+      "work tips",
+      "professional strategies",
+      "focus"
+    ],
+    "thumbnail_concept": "Show different professionals (teacher, developer, nurse) with icons representing productivity tools around them.",
+    "thumbnail_text": "ADHD Work Hacks"
+  },
+  "production_notes": "Use a DSLR camera for crisp visuals. Ensure good lighting to maintain an engaging atmosphere. Use editing software to add graphics and text overlays for clarity.",
+  "pattern_interrupt_moments": [
+    "At 2:30 — cut to b-roll",
+    "At 5:00 — show graphic",
+    "At 7:30 — switch to testimonial footage"
+  ],
+  "rewatch_hook": "The open loop about transforming ADHD challenges into strengths for specific professions encourages viewers to revisit for detailed strategies."
+}

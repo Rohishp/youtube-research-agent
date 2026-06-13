@@ -1,0 +1,136 @@
+{
+  "niche": "stoic philosophy for modern life",
+  "opportunity_score": 8,
+  "opportunity_score_reasoning": "The interest in applying Stoic philosophy to modern life is considerable, as shown by high view counts and engagement on top-performing videos. There is room to expand on practical applications and new perspectives beyond popular topics, indicating a strong opportunity for content creation in this niche.",
+  "top_videos_analyzed": [
+    {
+      "video_id": "EFkyxzJtiv4",
+      "title": "Stoicism: Become Undefeatable",
+      "channel_name": "Aperture",
+      "view_count": 13405555,
+      "like_count": 651547,
+      "comment_count": 8697,
+      "published_at": "2021-04-30T17:30:00Z",
+      "duration": "PT12M52S",
+      "description": "Stoicism helps us steer through past and present storms into calmer and more peaceful waters."
+    },
+    {
+      "video_id": "R9OCA6UFE-0",
+      "title": "The philosophy of Stoicism - Massimo Pigliucci",
+      "channel_name": "TED-Ed",
+      "view_count": 11387080,
+      "like_count": 400271,
+      "comment_count": 4886,
+      "published_at": "2017-06-19T15:00:18Z",
+      "duration": "PT5M30S",
+      "description": "The ancient Greco-Roman philosophy of Stoicism explains control over our reactions to events."
+    },
+    {
+      "video_id": "LGXRpbDuDGE",
+      "title": "When Life Hurts, Care Less About It | The Philosophy of Marcus Aurelius",
+      "channel_name": "Einzelgänger",
+      "view_count": 4624153,
+      "like_count": 138733,
+      "comment_count": 2794,
+      "published_at": "2023-01-12T15:00:20Z",
+      "duration": "PT14M8S",
+      "description": "An exploration of Marcus Aurelius' philosophy on dismissing unworthy concerns."
+    },
+    {
+      "video_id": "heh5XLwZVOY",
+      "title": "9 Stoic Rules For A Better Life (From Marcus Aurelius)",
+      "channel_name": "Daily Stoic",
+      "view_count": 3400074,
+      "like_count": 119087,
+      "comment_count": 1834,
+      "published_at": "2021-11-05T18:15:01Z",
+      "duration": "PT10M34S",
+      "description": "Stoic wisdom from Marcus Aurelius on living a life of virtue and purpose."
+    },
+    {
+      "video_id": "Yhn1Fe8cT0Q",
+      "title": "Stoicism as a philosophy for an ordinary life | Massimo Pigliucci | TEDxAthens",
+      "channel_name": "TEDx Talks",
+      "view_count": 2658847,
+      "like_count": 62652,
+      "comment_count": 1498,
+      "published_at": "2018-09-25T21:16:37Z",
+      "duration": "PT18M39S",
+      "description": "Exploration of how practicing ancient Greco-Roman philosophy can enhance modern living."
+    }
+  ],
+  "key_themes": [
+    "Acceptance and Control",
+    "Practical Applications of Stoicism",
+    "Historical and Modern Interpretations"
+  ],
+  "content_gaps": [
+    {
+      "gap_title": "Stoicism in Parenting",
+      "explanation": "Few videos focus on how Stoic principles can be applied to parenting and family life. With the hectic pace and challenges of modern parenting, this could be an untapped area.",
+      "estimated_demand": "high",
+      "suggested_video_title": "Raising Kids the Stoic Way: Emotional Resilience and Wisdom for Families"
+    },
+    {
+      "gap_title": "Stoicism for the Workplace",
+      "explanation": "While Stoicism's personal life applications are well-covered, its impact in workplace culture and corporate settings is underexplored.",
+      "estimated_demand": "medium",
+      "suggested_video_title": "Stoicism at Work: Professional Success Through Ancient Wisdom"
+    },
+    {
+      "gap_title": "Mental Health and Stoicism",
+      "explanation": "Expand on how Stoic practices can be integrated with modern mental health strategies like therapy and mindfulness.",
+      "estimated_demand": "high",
+      "suggested_video_title": "Healing the Modern Mind with Stoic Philosophy: A Guide to Mental Wellness"
+    }
+  ],
+  "video_ideas": [
+    {
+      "title": "Stoicism for the Digital Age: Navigating Social Media Calmly",
+      "hook": "Why social media antagonizes our peace and how Stoic philosophy can restore it.",
+      "target_emotion": "calm",
+      "estimated_search_volume": "high",
+      "competition_level": "medium",
+      "why_it_will_work": "High engagement with social media content indicates interest; providing a philosophical approach adds value."
+    },
+    {
+      "title": "Stoic Mornings: Crafting the Ultimate Day-Starter Routine",
+      "hook": "Start your day like Marcus Aurelius: Transform your mornings with Stoic wisdom.",
+      "target_emotion": "motivated",
+      "estimated_search_volume": "medium",
+      "competition_level": "high",
+      "why_it_will_work": "Morning routines are popular and linking them with historical figures offers a fresh perspective."
+    },
+    {
+      "title": "Love & Relationships Through a Stoic Lens",
+      "hook": "Unraveling the complexities of modern love with ancient Stoic wisdom.",
+      "target_emotion": "insightful",
+      "estimated_search_volume": "medium",
+      "competition_level": "low",
+      "why_it_will_work": "Relationship advice remains sought after; Stoic insights can offer unique angles."
+    }
+  ],
+  "tone_profile": {
+    "dominant_style": "informative and reflective",
+    "pacing": "steady and contemplative",
+    "visual_style": "minimalistic with historical visuals",
+    "common_hooks": [
+      "Discover the wisdom of...",
+      "Unlock ancient secrets of..."
+    ],
+    "words_to_use": [
+      "virtue",
+      "resilience"
+    ],
+    "words_to_avoid": [
+      "guru",
+      "hustle"
+    ]
+  },
+  "recommended_video_length": "10-15 minutes",
+  "best_upload_days": [
+    "Tuesday",
+    "Friday"
+  ],
+  "summary": "The Stoic philosophy for modern life niche has high viewer engagement, presenting valuable opportunities for content creation, particularly in underexplored areas like parenting and workplace applications. By focusing on practical applications, creators can provide unique value to audiences seeking to integrate Stoic wisdom into everyday modern challenges."
+}

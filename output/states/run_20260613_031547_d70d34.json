@@ -1,0 +1,302 @@
+{
+  "run_id": "run_20260613_031547_d70d34",
+  "niche": "morning routines for entrepreneurs",
+  "status": "completed",
+  "created_at": "2026-06-13T03:15:47.638748",
+  "research_brief": {
+    "niche": "morning routines for entrepreneurs",
+    "opportunity_score": 8,
+    "opportunity_score_reasoning": "The niche 'morning routines for entrepreneurs' is highly popular and competitive, with many videos garnering millions of views. However, there's a noticeable gap in content specifically tailored to different types of entrepreneurs, such as solopreneurs vs. team leaders, and the impact of industry on routine effectiveness. Given the potential for personalization and deep-dives into lesser-explored routine strategies, there's significant opportunity despite the competition.",
+    "top_videos_analyzed": [
+      {
+        "video_id": "9pLk3OU6bOs",
+        "title": "This morning routine is scientifically proven to make you limitless.",
+        "channel_name": "SpoonFedStudy",
+        "view_count": 1281236,
+        "like_count": 55380,
+        "comment_count": 1884,
+        "published_at": "2024-06-05T15:40:14Z",
+        "duration": "PT15M19S",
+        "description": "The perfect, most ultimate morning routine ever... designed for productivity and efficiency... all backed by science!"
+      },
+      {
+        "video_id": "eEirzGD525I",
+        "title": "Morning Rituals of an Entrepreneur",
+        "channel_name": "Valuetainment",
+        "view_count": 912685,
+        "like_count": 27305,
+        "comment_count": 1160,
+        "published_at": "2016-08-11T13:00:17Z",
+        "duration": "PT17M8S",
+        "description": "How you start your day will determine the type of day you're going to end up having."
+      },
+      {
+        "video_id": "SELWtQpcy1A",
+        "title": "The \"1 Billion Dollar Morning Routine\" - Habits of the World’s Most Successful People",
+        "channel_name": "Be Inspired",
+        "view_count": 8827269,
+        "like_count": 236177,
+        "comment_count": 4992,
+        "published_at": "2019-01-22T11:04:53Z",
+        "duration": "PT7M28S",
+        "description": "The \"1 Billion Dollar Morning Routine\" - Habits of the World’s Most Successful People"
+      },
+      {
+        "video_id": "lC3Hxx28QY8",
+        "title": "How I Start My Day for PEAK Performance (6 Science-Based Habits)",
+        "channel_name": "RESPIRE",
+        "view_count": 710432,
+        "like_count": 18483,
+        "comment_count": 279,
+        "published_at": "2025-02-22T14:00:06Z",
+        "duration": "PT8M49S",
+        "description": "Andrew Huberman explores powerful morning protocols to enhance focus, energy, and overall well-being."
+      },
+      {
+        "video_id": "_s16zjowQGA",
+        "title": "Neuroscientist: Use This Morning Routine To BOOST MOTIVATION and FOCUS",
+        "channel_name": "Motivation2Study",
+        "view_count": 592948,
+        "like_count": 14192,
+        "comment_count": 239,
+        "published_at": "2024-03-18T13:00:07Z",
+        "duration": "PT8M11S",
+        "description": "Dr. Andrew Huberman explains the optimal Morning Routine to Boost Motivation and Focus."
+      }
+    ],
+    "key_themes": [
+      "personalization of routines",
+      "science-based habits",
+      "energy and focus enhancement",
+      "momentum creation",
+      "peer reflection and adaptation"
+    ],
+    "content_gaps": [
+      {
+        "gap_title": "Routine Adaptations for Specific Entrepreneurial Roles",
+        "explanation": "Content often addresses a general audience, missing nuances for different roles such as team leaders vs. solopreneurs who have differing needs.",
+        "estimated_demand": "high",
+        "suggested_video_title": "Tailored Morning Routines for Solopreneurs vs. Team Leaders"
+      },
+      {
+        "gap_title": "Impact of Industry on Effective Routines",
+        "explanation": "The type of industry can greatly influence the optimal morning routine; most current content is not tailored to this.",
+        "estimated_demand": "medium",
+        "suggested_video_title": "How Your Industry Affects Your Optimal Morning Routine"
+      },
+      {
+        "gap_title": "Evening Preparations for a Successful Morning",
+        "explanation": "While there is significant focus on morning habits, evening routines that prepare for a successful morning are often overlooked.",
+        "estimated_demand": "high",
+        "suggested_video_title": "Evening Routines to Maximize Your Morning Success"
+      }
+    ],
+    "video_ideas": [
+      {
+        "title": "Tailored Morning Routines for Solopreneurs vs. Team Leaders",
+        "hook": "Discover how your role as an entrepreneur should shape your morning routine for maximum success!",
+        "target_emotion": "Empowered",
+        "estimated_search_volume": "high",
+        "competition_level": "medium",
+        "why_it_will_work": "Personalization in routines resonates with audiences as it provides practical, relevant advice."
+      },
+      {
+        "title": "Evening Routines to Maximize Your Morning Success",
+        "hook": "Did you know the secret to a perfect morning starts the night before?",
+        "target_emotion": "Curious",
+        "estimated_search_volume": "medium",
+        "competition_level": "low",
+        "why_it_will_work": "Fills a major content gap by addressing how evening habits can impact morning productivity."
+      },
+      {
+        "title": "Optimizing Morning Routines by Industry",
+        "hook": "Is your morning routine really setting you up for success in your specific industry?",
+        "target_emotion": "Informed",
+        "estimated_search_volume": "medium",
+        "competition_level": "medium",
+        "why_it_will_work": "This concept can attract viewers seeking more personalized and applicable advice."
+      }
+    ],
+    "tone_profile": {
+      "dominant_style": "Informative and motivational",
+      "pacing": "Moderate to fast-paced to keep engagement",
+      "visual_style": "Mix of talking head and animated infographics",
+      "common_hooks": [
+        "'Unlock Limitless Potential'",
+        "'Win the Day by Winning the Morning'",
+        "'Optimize for Peak Performance'"
+      ],
+      "words_to_use": [
+        "optimization",
+        "productivity",
+        "focus",
+        "habits",
+        "success"
+      ],
+      "words_to_avoid": [
+        "overnight success",
+        "quick fixes"
+      ]
+    },
+    "recommended_video_length": "10-15 minutes",
+    "best_upload_days": [
+      "Monday",
+      "Tuesday"
+    ],
+    "summary": "The niche of 'morning routines for entrepreneurs' offers high potential, given its popularity and engagement levels. Despite competition, significant opportunities exist through personalization by role and industry, and by addressing overlooked evening routines. Videos with a focus on tailored advice and scientifically-backed habits will likely perform well."
+  },
+  "research_attempts": 1,
+  "research_query_used": "morning routines for entrepreneurs",
+  "video_script": {
+    "niche": "morning routines for entrepreneurs",
+    "addresses_gap": "Routine Adaptations for Specific Entrepreneurial Roles",
+    "based_on_idea": "Tailored Morning Routines for Solopreneurs vs. Team Leaders",
+    "hook_statement": "Discover how your role as an entrepreneur should shape your morning routine for maximum success!",
+    "estimated_duration_minutes": 12.0,
+    "word_count": 1800,
+    "sections": [
+      {
+        "section_type": "hook",
+        "title": "The Power of Tailored Morning Routines",
+        "script": "Discover how your role as an entrepreneur should shape your morning routine for maximum success! Whether you're leading a team or flying solo, your morning sets the tone for your entire day. But are you tailoring it to fit your unique entrepreneurial journey? Let's dive into what your morning should look like based on your specific role.",
+        "duration_seconds": 30,
+        "visual_direction": "Split screen: left side shows a solopreneur working alone, right side shows a team leader in a meeting.",
+        "b_roll_notes": "Footage of sunrise, entrepreneurs waking up, preparing their morning routines."
+      },
+      {
+        "section_type": "problem",
+        "title": "One-Size-Fits-All Routines Don't Work",
+        "script": "You're losing the first 90 minutes of your day to decisions that don't matter. Many entrepreneurs follow generic morning routines that don't cater to their specific roles. This generic approach can lead to wasted time and energy, leaving you feeling unproductive and stressed. Whether you're a solopreneur or a team leader, what works for one might not work for another. So, how do we fix this?",
+        "duration_seconds": 90,
+        "visual_direction": "Show a calendar filled with generic tasks, then zoom in on a frustrated entrepreneur.",
+        "b_roll_notes": "Clips of entrepreneurs looking overwhelmed, sipping coffee, checking phones."
+      },
+      {
+        "section_type": "agitation",
+        "title": "The Cost of a Mismatched Routine",
+        "script": "Imagine starting your day feeling out of sync, like a puzzle piece that just won’t fit. Over time, this mismatch can sap your energy, productivity, and passion. Solopreneurs may find themselves buried under tasks without clear priorities, while team leaders might struggle to motivate their teams. The cost? Missed opportunities and a constant feeling of playing catch-up.",
+        "duration_seconds": 90,
+        "visual_direction": "Dramatic music overlay with black and white footage of frustrated entrepreneurs.",
+        "b_roll_notes": "Footage of entrepreneurs missing calls, yawning during meetings, and cluttered desks."
+      },
+      {
+        "section_type": "solution",
+        "title": "Personalizing Your Routine for Success",
+        "script": "Here's the good news: by personalizing your morning routine, you can unlock new levels of productivity and focus. For solopreneurs, this might mean dedicating the first hour to strategic planning and creative work, free from distractions. Team leaders might focus on aligning their morning with team prep and communication. In this video, we'll explore tailored routines for both solopreneurs and team leaders to optimize every morning for peak success.",
+        "duration_seconds": 120,
+        "visual_direction": "Show a flowchart dividing paths between solopreneurs and team leaders with respective routine tips.",
+        "b_roll_notes": "Animated infographics showing different routine strategies."
+      },
+      {
+        "section_type": "main_points",
+        "title": "Main Points: Tailored Routines",
+        "script": "Let's break it down: \n1. **Solopreneurs:** Start with a brief meditation to clear your mind, then dive straight into your top priority project. This is your golden hour of focus. Avoid emails and social media until mid-morning. \n2. **Team Leaders:** Begin with a quick review of team goals and priorities. Follow this by drafting an inspiring message or setting up a morning huddle to align your team. \n3. **Mindfulness for Both:** No matter your role, incorporating mindfulness can enhance focus and reduce stress. Even a 10-minute breathing exercise can transform your day. \nThese personalized approaches ensure that every moment of your morning is geared towards maximizing success.",
+        "duration_seconds": 600,
+        "visual_direction": "Animated visuals contrasting solopreneur and team leader routines.",
+        "b_roll_notes": "Footage of a solopreneur meditating, team leader in a meeting, both doing mindfulness exercises."
+      },
+      {
+        "section_type": "evidence",
+        "title": "Evidence: Success Stories",
+        "script": "Meet Sarah, a solopreneur who turned her mornings around by prioritizing creative work over admin tasks. Her business saw a 30% growth in just three months. Then there’s Jake, a team leader whose morning huddles boosted team performance and morale, leading to a record-breaking quarter. Their successes aren’t just stories—they’re proof that a tailored morning routine works.",
+        "duration_seconds": 120,
+        "visual_direction": "Interviews with Sarah and Jake, overlay of their success metrics.",
+        "b_roll_notes": "Show graphs illustrating growth metrics, happy team interactions."
+      },
+      {
+        "section_type": "cta",
+        "title": "Take Action: Design Your Perfect Morning",
+        "script": "Now it's your turn. Take a moment to reflect on your role and how these strategies can be integrated into your morning. Start small, experiment, and adjust. Remember, the goal is to optimize your mornings for productivity and focus. Leave a comment below with your personalized routine, and let's inspire each other to succeed!",
+        "duration_seconds": 60,
+        "visual_direction": "Call-to-action graphic, with text prompt to comment and engage.",
+        "b_roll_notes": "Footage of viewers writing notes, reflecting on their routines."
+      }
+    ],
+    "seo": {
+      "title": "Tailored Morning Routines for Solopreneurs vs. Team Leaders",
+      "title_variants": [
+        "Custom Morning Routines for Entrepreneurs: Solopreneurs vs. Team Leaders",
+        "Optimize Your Morning: Solopreneurs vs. Team Leaders"
+      ],
+      "description": "Are you an entrepreneur struggling with your morning routine? Discover how to tailor your mornings for maximum success based on your role.",
+      "tags": [
+        "morning routines",
+        "entrepreneurs",
+        "solopreneurs",
+        "team leaders",
+        "productivity"
+      ],
+      "thumbnail_concept": "Split image with solopreneur on one side and team leader on the other, both with morning props like coffee and laptops.",
+      "thumbnail_text": "Tailored Morning Routines"
+    },
+    "production_notes": "Use a mix of talking head segments and animated infographics. Ensure clear audio and engaging visuals. Fast-paced editing to maintain viewer engagement.",
+    "pattern_interrupt_moments": [
+      "At 2:30 — cut to b-roll",
+      "At 5:00 — show graphic"
+    ],
+    "rewatch_hook": "Reassess your role and find a new morning strategy that could unlock hidden productivity."
+  },
+  "script_attempts": 1,
+  "eval_score": 7,
+  "eval_breakdown": {
+    "hook_quality": {
+      "score": 2,
+      "reason": "PASS: Strong hook — specific and pattern-interrupting"
+    },
+    "title_specificity": {
+      "score": 0,
+      "reason": "FAIL: Title is generic — no numbers, timeframes, or concrete claims. Title: 'Tailored Morning Routines for Solopreneurs vs. Team Leaders'"
+    },
+    "structure_completeness": {
+      "score": 1,
+      "reason": "PARTIAL: Missing section types: ['at least 2 main content sections']"
+    },
+    "visual_direction": {
+      "score": 2,
+      "reason": "PASS: 7/7 sections have specific visual direction"
+    },
+    "length_accuracy": {
+      "score": 2,
+      "reason": "PASS: 1800 words consistent with 12.0min claim"
+    }
+  },
+  "eval_feedback": null,
+  "gate_history": [
+    {
+      "gate": "niche_gate",
+      "attempt": 1,
+      "action": "proceed",
+      "reason": "Research passed all quality checks",
+      "detail": "Score: 8/10 | Videos: 5 | Gaps: 3",
+      "eval_score": null,
+      "timestamp": "2026-06-13T03:16:10.853981"
+    },
+    {
+      "gate": "script_gate",
+      "attempt": 1,
+      "action": "proceed",
+      "reason": "Script score 7/10 meets threshold (7)",
+      "detail": "",
+      "eval_score": 7,
+      "timestamp": "2026-06-13T03:16:26.517227"
+    }
+  ],
+  "stage_timings": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "duration_seconds": 23.22
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "duration_seconds": 15.59
+    }
+  ],
+  "total_tokens_input": 0,
+  "total_tokens_output": 0,
+  "total_cost_usd": 0.0,
+  "duration_seconds": 38.89,
+  "warnings": [],
+  "error": null
+}

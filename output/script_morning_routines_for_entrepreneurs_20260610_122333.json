@@ -1,0 +1,89 @@
+{
+  "niche": "morning routines for entrepreneurs",
+  "addresses_gap": "Customizable Routines for Different Entrepreneurial Needs",
+  "based_on_idea": "Customizing Your Morning Routine: An Entrepreneur’s Guide",
+  "hook_statement": "You're losing precious hours every morning to routines that aren't designed for you.",
+  "estimated_duration_minutes": 13.0,
+  "word_count": 1500,
+  "sections": [
+    {
+      "section_type": "hook",
+      "title": "Are Your Mornings Working Against You?",
+      "script": "You're losing precious hours every morning to routines that aren't designed for you. Most people blindly follow generic morning routines, thinking they're setting themselves up for success. But if you've ever felt like your mornings are more chaotic than empowering, you're not alone. Today, we're breaking down how to build a morning routine that fits your unique entrepreneurial life.",
+      "duration_seconds": 30,
+      "visual_direction": "Close-up of a cluttered desk with a half-eaten breakfast, a buzzing phone, and an open laptop showing unread emails.",
+      "b_roll_notes": "Footage of various entrepreneurs looking stressed during morning activities."
+    },
+    {
+      "section_type": "problem",
+      "title": "The One-Size-Fits-All Routine Myth",
+      "script": "The problem with most morning routines is that they're created with a one-size-fits-all mentality. You're an entrepreneur, not a factory worker. Your mornings shouldn't look like a carbon copy of someone else's. The truth is, by following a routine that doesn't align with your business goals and personal energy cycles, you're losing momentum before your day even starts.",
+      "duration_seconds": 90,
+      "visual_direction": "Graph showing a drop in productivity throughout the morning for someone following a generic routine.",
+      "b_roll_notes": "Shots of people yawning and looking at the clock during morning work."
+    },
+    {
+      "section_type": "agitation",
+      "title": "The Hidden Cost of Misaligned Mornings",
+      "script": "Imagine waking up every day feeling drained, not because you're not getting enough sleep, but because your morning routine is depleting your energy. You start your day feeling behind, overwhelmed by decisions that don't align with your priorities. This cycle affects not just your productivity but your mental health and overall satisfaction with your work.",
+      "duration_seconds": 120,
+      "visual_direction": "Split screen: left side shows a chaotic morning, right side shows a relaxed, productive morning.",
+      "b_roll_notes": "Footage of an entrepreneur looking frustrated while juggling multiple tasks."
+    },
+    {
+      "section_type": "solution_preview",
+      "title": "The Key to a Personalized Morning Routine",
+      "script": "But what if your morning could be your most powerful tool? What if you could craft a routine that energizes you, aligns with your business goals, and sets you up for success? In this video, you'll learn how to customize your morning routine to fit your entrepreneurial needs perfectly. We'll explore strategies to match your energy cycles and business demands.",
+      "duration_seconds": 90,
+      "visual_direction": "Montage of successful entrepreneurs engaging in different morning activities that suit their lifestyles.",
+      "b_roll_notes": "Footage of someone journaling, exercising, and planning their day with focus."
+    },
+    {
+      "section_type": "main_points",
+      "title": "Building Your Tailored Routine",
+      "script": "First, assess your natural energy cycle. Are you a morning lark or a night owl? Use this knowledge to schedule your most critical tasks when you're naturally more alert. Next, consider your business needs. If your industry demands early meetings, structure your routine to include a quick, energizing activity beforehand. Finally, integrate personal elements that boost your mood, like a favorite podcast or a short walk.",
+      "duration_seconds": 240,
+      "visual_direction": "Timeline graphic showing different routine elements at various times of the morning.",
+      "b_roll_notes": "Footage of different entrepreneurs engaging in personalized activities."
+    },
+    {
+      "section_type": "evidence",
+      "title": "Why Personalization Works",
+      "script": "Studies show that routines aligned with personal rhythms significantly boost productivity and well-being. For instance, a study published in the Journal of Clinical Psychology found that individuals who tailored their morning activities reported higher satisfaction levels and better focus throughout the day. Entrepreneurs who customize their routines see a marked improvement in business performance and personal happiness.",
+      "duration_seconds": 120,
+      "visual_direction": "Pop-up graphics with key statistics and quotes from studies.",
+      "b_roll_notes": "Footage of a researcher explaining findings in a lab setting."
+    },
+    {
+      "section_type": "cta",
+      "title": "Create Your Perfect Morning",
+      "script": "Now it's your turn. Start by identifying just one change you can make tomorrow morning that aligns with your energy and goals. Test it for a week and observe the difference. Share your experience in the comments below. Let's build a community of empowered entrepreneurs who own their mornings.",
+      "duration_seconds": 60,
+      "visual_direction": "Text overlay encouraging viewers to comment their personalized routine changes.",
+      "b_roll_notes": "Footage of people implementing different morning strategies."
+    }
+  ],
+  "seo": {
+    "title": "Customizing Your Morning Routine: An Entrepreneur's Guide",
+    "title_variants": [
+      "Tailor Your Morning Routine for Entrepreneurial Success",
+      "Personalize Your Mornings: Entrepreneur's Guide",
+      "Craft the Perfect Morning Routine for Your Business"
+    ],
+    "description": "You're losing precious hours every morning to routines that aren't designed for you. Discover how to build a morning routine that fits your unique entrepreneurial lifestyle.",
+    "tags": [
+      "morning routine",
+      "entrepreneurship",
+      "productivity",
+      "custom routine"
+    ],
+    "thumbnail_concept": "A split image showing a chaotic morning on one side and a calm, organized morning on the other.",
+    "thumbnail_text": "Your Perfect Morning"
+  },
+  "production_notes": "Use a clean and professional visual style with moderate pacing. Ensure good lighting for close-up shots. Consider using graphics to illustrate statistics.",
+  "pattern_interrupt_moments": [
+    "At 2:30 — cut to b-roll of a chaotic morning",
+    "At 5:00 — show graphic of personalized morning routine timeline"
+  ],
+  "rewatch_hook": "What if your morning routine could unlock unprecedented productivity tailored just for you?"
+}

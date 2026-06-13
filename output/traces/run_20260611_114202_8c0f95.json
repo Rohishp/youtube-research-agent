@@ -1,0 +1,114 @@
+{
+  "run_id": "run_20260611_114202_8c0f95",
+  "niche": "stoic philosophy for modern life",
+  "status": "completed",
+  "started_at": "2026-06-11T11:42:02.507819",
+  "duration_seconds": 37.71,
+  "total_tokens_input": 14502,
+  "total_tokens_output": 1494,
+  "total_cost_usd": 0.0949,
+  "final_eval_score": 6,
+  "final_title": "How Stoic Philosophy Can Help Combat Anxiety and Depression",
+  "warnings": [],
+  "error": null,
+  "stages": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "started_at": "2026-06-11T11:42:02.507819",
+      "duration_seconds": 20.11,
+      "iterations": 5,
+      "tokens_input": 14502,
+      "tokens_output": 1494,
+      "cost_usd": 0.0949,
+      "eval_score": null,
+      "gate_decision": {
+        "gate": "niche_gate",
+        "action": "proceed",
+        "reason": "Research passed all quality checks",
+        "detail": "Score: 8/10 | Videos: 3 | Gaps: 3",
+        "opportunity_score": 8,
+        "videos_analyzed": 3,
+        "gaps_found": 3
+      },
+      "error": null,
+      "tool_calls": [
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "stoic philosophy for modern life",
+            "max_results": 10
+          },
+          "duration_ms": 468.1,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "modern applications of stoic philosophy",
+            "max_results": 5
+          },
+          "duration_ms": 438.1,
+          "success": true,
+          "error": null,
+          "results_count": 5
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "EFkyxzJtiv4"
+          },
+          "duration_ms": 1153.3,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "R9OCA6UFE-0"
+          },
+          "duration_ms": 991.9,
+          "success": true,
+          "error": null,
+          "chars_returned": 3997,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "heh5XLwZVOY"
+          },
+          "duration_ms": 893.7,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        }
+      ]
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "started_at": "2026-06-11T11:42:22.613802",
+      "duration_seconds": 17.6,
+      "iterations": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cost_usd": 0.0,
+      "eval_score": 6,
+      "gate_decision": {
+        "gate": "script_gate",
+        "action": "proceed",
+        "reason": "Script score 6/10 meets threshold (6)",
+        "detail": "Script passed quality gate on attempt 1.",
+        "eval_score": 6
+      },
+      "error": null,
+      "tool_calls": []
+    }
+  ]
+}

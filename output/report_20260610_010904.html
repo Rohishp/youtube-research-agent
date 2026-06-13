@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pipeline Report: Morning Routines For Entrepreneurs</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         background: #0f172a; color: #e2e8f0; line-height: 1.6; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+  /* Header */
+  .header { background: linear-gradient(135deg, #1e293b, #0f172a);
+             border: 1px solid #334155; border-radius: 16px;
+             padding: 40px; margin-bottom: 32px; }
+  .pipeline-label { font-size: 12px; letter-spacing: 2px; color: #64748b;
+                     text-transform: uppercase; margin-bottom: 8px; }
+  .niche-title { font-size: 32px; font-weight: 700; color: #f1f5f9;
+                  margin-bottom: 24px; line-height: 1.2; }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; }
+  .metric { background: #1e293b; border: 1px solid #334155;
+             border-radius: 12px; padding: 16px; text-align: center; }
+  .metric-value { font-size: 28px; font-weight: 700; }
+  .metric-label { font-size: 12px; color: #64748b; margin-top: 4px; }
+
+  /* Section headings */
+  .section { margin-bottom: 32px; }
+  .section-heading { font-size: 18px; font-weight: 600; color: #94a3b8;
+                      letter-spacing: 1px; text-transform: uppercase;
+                      margin-bottom: 16px; padding-bottom: 8px;
+                      border-bottom: 1px solid #1e293b; }
+
+  /* Cards */
+  .card { background: #1e293b; border: 1px solid #334155;
+           border-radius: 12px; padding: 20px; margin-bottom: 12px; }
+
+  /* Gaps */
+  .gap-card { background: #1e293b; border: 1px solid #334155;
+               border-radius: 12px; padding: 20px; margin-bottom: 12px; }
+  .gap-header { display: flex; justify-content: space-between;
+                 align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+  .gap-title { font-weight: 600; font-size: 15px; color: #f1f5f9; }
+  .demand-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px;
+                   font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .gap-explanation { color: #94a3b8; font-size: 14px; margin-bottom: 10px; }
+  .suggested-title { background: #0f172a; border-left: 3px solid #3b82f6;
+                      padding: 8px 12px; border-radius: 0 8px 8px 0;
+                      font-size: 14px; color: #93c5fd; }
+
+  /* Ideas */
+  .idea-card { background: #1e293b; border: 1px solid #334155;
+                border-radius: 12px; padding: 20px; margin-bottom: 12px; }
+  .idea-title { font-weight: 700; font-size: 16px; color: #f1f5f9; margin-bottom: 8px; }
+  .idea-hook { color: #a78bfa; font-size: 14px; margin-bottom: 10px; }
+  .idea-meta { display: flex; gap: 16px; flex-wrap: wrap;
+                font-size: 13px; color: #64748b; margin-bottom: 10px; }
+  .idea-why { color: #94a3b8; font-size: 14px; }
+
+  /* Script sections */
+  .section-card { background: #1e293b; border: 1px solid #334155;
+                   border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+  .section-header { display: flex; justify-content: space-between;
+                     align-items: flex-start; margin-bottom: 16px; }
+  .section-number { width: 32px; height: 32px; border-radius: 50%;
+                     background: #0f172a; border: 1px solid #334155;
+                     display: flex; align-items: center; justify-content: center;
+                     font-weight: 700; font-size: 14px; flex-shrink: 0; }
+  .section-title { font-weight: 600; color: #f1f5f9; margin-bottom: 4px; }
+  .section-type { font-size: 11px; padding: 2px 8px; border-radius: 20px;
+                   font-weight: 600; text-transform: uppercase; }
+  .section-duration { color: #64748b; font-size: 13px; flex-shrink: 0; }
+  .script-text { color: #cbd5e1; font-size: 15px; line-height: 1.8;
+                  margin-bottom: 16px; padding: 16px; background: #0f172a;
+                  border-radius: 8px; }
+  .direction-box, .broll-box { font-size: 13px; color: #94a3b8;
+                                 margin-top: 10px; padding: 10px 14px;
+                                 border-radius: 8px; }
+  .direction-box { background: #1a2744; border-left: 3px solid #3b82f6; }
+  .broll-box { background: #1a1f2e; border-left: 3px solid #64748b; }
+  .direction-label { font-weight: 600; color: #64748b; margin-bottom: 4px;
+                      font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* SEO */
+  .seo-title { font-size: 20px; font-weight: 700; color: #f1f5f9;
+                margin-bottom: 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .tag { background: #1e293b; border: 1px solid #334155; padding: 4px 10px;
+          border-radius: 20px; font-size: 12px; color: #94a3b8; }
+  .seo-desc { color: #94a3b8; font-size: 14px; margin: 12px 0; line-height: 1.7; }
+  .variants { color: #64748b; font-size: 14px; padding-left: 20px; }
+  .variants li { margin-bottom: 4px; }
+
+  /* Videos */
+  .video-row { padding: 14px 0; border-bottom: 1px solid #1e293b; }
+  .video-row:last-child { border-bottom: none; }
+  .video-title-link { color: #60a5fa; text-decoration: none; font-weight: 500;
+                       font-size: 14px; display: block; margin-bottom: 6px; }
+  .video-title-link:hover { color: #93c5fd; }
+  .video-meta { display: flex; gap: 16px; font-size: 12px; color: #64748b; flex-wrap: wrap; }
+
+  /* Tone */
+  .word-badge { padding: 4px 10px; border-radius: 20px; font-size: 12px; }
+  .word-badge.use { background: #14532d30; color: #4ade80;
+                     border: 1px solid #14532d; }
+  .word-badge.avoid { background: #7f1d1d30; color: #f87171;
+                       border: 1px solid #7f1d1d; }
+  .tone-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .tone-item { background: #0f172a; border-radius: 8px; padding: 14px; }
+  .tone-label { font-size: 11px; color: #64748b; text-transform: uppercase;
+                 letter-spacing: 1px; margin-bottom: 6px; }
+  .tone-value { color: #e2e8f0; font-size: 14px; }
+
+  /* Footer */
+  .footer { text-align: center; color: #334155; font-size: 12px;
+             margin-top: 48px; padding-top: 24px; border-top: 1px solid #1e293b; }
+
+  @media (max-width: 600px) {
+    .tone-grid { grid-template-columns: 1fr; }
+    .section-header { flex-direction: column; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="pipeline-label">YouTube Research & Script Pipeline</div>
+    <div class="niche-title">Morning Routines For Entrepreneurs</div>
+    <div class="metrics">
+      <div class="metric">
+        <div class="metric-value" style="color:#22c55e">7/10</div>
+        <div class="metric-label">Opportunity Score</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value" style="color:#60a5fa">3</div>
+        <div class="metric-label">Content Gaps</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value" style="color:#a78bfa">1,750</div>
+        <div class="metric-label">Script Words</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value" style="color:#34d399">12.0m</div>
+        <div class="metric-label">Video Length</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value" style="color:#f59e0b">5</div>
+        <div class="metric-label">Videos Analyzed</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Opportunity Reasoning -->
+  <div class="section">
+    <div class="section-heading">Opportunity Analysis</div>
+    <div class="card">
+      <p style="color:#94a3b8">The niche has a moderate saturation with a significant number of high viewership videos, but there are opportunities for more tailored content addressing specific pain points and cultural variations.</p>
+      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:8px">
+        <span class="tag" style="background:#1e3a5f;color:#60a5fa;border-color:#1e3a5f">Habit formation and consistency</span><span class="tag" style="background:#1e3a5f;color:#60a5fa;border-color:#1e3a5f">Scientific backing for routines</span><span class="tag" style="background:#1e3a5f;color:#60a5fa;border-color:#1e3a5f">Mental and physical wellness integration</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Gaps -->
+  <div class="section">
+    <div class="section-heading">Content Gaps (3 found)</div>
+    
+        <div class="gap-card">
+            <div class="gap-header">
+                <span class="gap-title">Cultural Morning Routines for Entrepreneurs</span>
+                <span class="demand-badge" style="background:#f59e0b20;color:#f59e0b;border:1px solid #f59e0b40">medium demand</span>
+            </div>
+            <p class="gap-explanation">There's a lack of culturally diverse perspectives on morning routines for entrepreneurs, which could cater to a global audience.</p>
+            <div class="suggested-title">💡 Global Entrepreneur Morning Routines: East Meets West</div>
+        </div>
+        <div class="gap-card">
+            <div class="gap-header">
+                <span class="gap-title">Morning Routines with Kids</span>
+                <span class="demand-badge" style="background:#22c55e20;color:#22c55e;border:1px solid #22c55e40">high demand</span>
+            </div>
+            <p class="gap-explanation">Many videos do not cover how entrepreneurs with children can balance morning routines with family responsibilities.</p>
+            <div class="suggested-title">💡 Successful Morning Routines for Entrepreneur Parents: Balancing Work and Family</div>
+        </div>
+        <div class="gap-card">
+            <div class="gap-header">
+                <span class="gap-title">Prioritizing Mental Health in Morning Routines</span>
+                <span class="demand-badge" style="background:#22c55e20;color:#22c55e;border:1px solid #22c55e40">high demand</span>
+            </div>
+            <p class="gap-explanation">There is limited content focusing specifically on integrating mental health practices like meditation and journaling in a structured way.</p>
+            <div class="suggested-title">💡 Unlock Peak Productivity with Mental Health Focused Morning Routines</div>
+        </div>
+  </div>
+
+  <!-- Video Ideas -->
+  <div class="section">
+    <div class="section-heading">Video Ideas</div>
+    
+        <div class="idea-card">
+            <div class="idea-title">Culturally Inspired Morning Routines for Entrepreneurs</div>
+            <div class="idea-hook">🎣 Explore morning rituals from around the world to boost entrepreneurial success.</div>
+            <div class="idea-meta">
+                <span>🎯 Curiosity and Inclusion</span>
+                <span style="color:#22c55e">⚔️ low competition</span>
+                <span>📊 medium volume</span>
+            </div>
+            <p class="idea-why">This caters to a niche audience interested in global perspectives and provides fresh content diversity.</p>
+        </div>
+        <div class="idea-card">
+            <div class="idea-title">How to Balance Parenting and Entrepreneurship: Morning Routine Edition</div>
+            <div class="idea-hook">🎣 Discover how successful parents manage their mornings to balance business and family life.</div>
+            <div class="idea-meta">
+                <span>🎯 Support and Inspiration</span>
+                <span style="color:#f59e0b">⚔️ medium competition</span>
+                <span>📊 high volume</span>
+            </div>
+            <p class="idea-why">High relevance for entrepreneurial parents, capturing a potentially engaged audience.</p>
+        </div>
+        <div class="idea-card">
+            <div class="idea-title">Morning Routines for a Stress-Free Entrepreneurial Life</div>
+            <div class="idea-hook">🎣 Use these scientifically-backed routines to transform stress into success.</div>
+            <div class="idea-meta">
+                <span>🎯 Calm and Empowerment</span>
+                <span style="color:#f59e0b">⚔️ medium competition</span>
+                <span>📊 high volume</span>
+            </div>
+            <p class="idea-why">This leverages the popular interest in both productivity and mental well-being.</p>
+        </div>
+  </div>
+
+  <!-- Script -->
+  <div class="section">
+    <div class="section-heading">Full Video Script</div>
+    <div class="card" style="margin-bottom:16px">
+      <div class="seo-title">Mastering Mornings: Entrepreneur Parents' Secret Routines</div>
+      <div style="color:#64748b;font-size:13px;margin-top:4px">
+        Addresses gap: Morning Routines with Kids
+      </div>
+      <div style="margin-top:12px;padding:12px;background:#0f172a;border-radius:8px;
+                  border-left:3px solid #8b5cf6;color:#c4b5fd;font-size:15px;font-style:italic">
+        "Imagine juggling a thriving business and a happy family, all before 9 AM. Sounds impossible, right?"
+      </div>
+    </div>
+    
+        <div class="section-card">
+            <div class="section-header">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <span class="section-number">1</span>
+                    <div>
+                        <div class="section-title">The Ultimate Morning Balancing Act</div>
+                        <span class="section-type" style="background:#8b5cf620;color:#8b5cf6;border:1px solid #8b5cf640">hook</span>
+                    </div>
+                </div>
+                <span class="section-duration">⏱ 30s</span>
+            </div>
+            <div class="script-text">Imagine juggling a thriving business and a happy family, all before 9 AM. Sounds impossible, right? But many successful entrepreneurs do just that, seamlessly integrating parenting duties with business responsibilities. Today, we're unlocking their secrets.</div>
+            <div class="direction-box">
+                <div class="direction-label">🎬 Visual Direction</div>
+                <div>Opening shot: Split screen of a parent at a desk with a laptop on one side, and on the other, making breakfast with kids.</div>
+            </div>
+            <div class="broll-box">
+                <div class="direction-label">📹 B-Roll</div>
+                <div>Busy morning scenes of a family kitchen, children playing, and a parent working on a laptop.</div>
+            </div>
+        </div>
+        <div class="section-card">
+            <div class="section-header">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <span class="section-number">2</span>
+                    <div>
+                        <div class="section-title">The Chaos of Entrepreneurial Parenting</div>
+                        <span class="section-type" style="background:#ef444420;color:#ef4444;border:1px solid #ef444440">problem</span>
+                    </div>
+                </div>
+                <span class="section-duration">⏱ 1m 0s</span>
+            </div>
+            <div class="script-text">You're losing precious time each morning trying to balance business and family responsibilities. You might feel like you're constantly racing against the clock, missing out on family moments or business opportunities.</div>
+            <div class="direction-box">
+                <div class="direction-label">🎬 Visual Direction</div>
+                <div>Show a montage of chaotic mornings: alarm ringing, kids needing attention, and emails piling up.</div>
+            </div>
+            <div class="broll-box">
+                <div class="direction-label">📹 B-Roll</div>
+                <div>Footage of alarm clocks, kids running around, and a laptop with multiple notifications.</div>
+            </div>
+        </div>
+        <div class="section-card">
+            <div class="section-header">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <span class="section-number">3</span>
+                    <div>
+                        <div class="section-title">The Cost of an Unbalanced Morning</div>
+                        <span class="section-type" style="background:#f9731620;color:#f97316;border:1px solid #f9731640">agitation</span>
+                    </div>
+                </div>
+                <span class="section-duration">⏱ 1m 0s</span>
+            </div>
+            <div class="script-text">Imagine if this chaos continued unchecked. Stress builds, productivity drops, and those precious family moments slip away. You might find your business and personal life suffering, creating a cycle that's hard to break.</div>
+            <div class="direction-box">
+                <div class="direction-label">🎬 Visual Direction</div>
+                <div>Visualize stress: parent looking overwhelmed, clock ticking loudly, and children waiting for attention.</div>
+            </div>
+            <div class="broll-box">
+                <div class="direction-label">📹 B-Roll</div>
+                <div>Close-ups of a stressed face, clock hands moving quickly, and children looking impatient.</div>
+            </div>
+        </div>
+        <div class="section-card">
+            <div class="section-header">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <span class="section-number">4</span>
+                    <div>
+                        <div class="section-title">Your Solution: A Harmonious Morning Routine</div>
+                        <span class="section-type" style="background:#3b82f620;color:#3b82f6;border:1px solid #3b82f640">solution_preview</span>
+                    </div>
+                </div>
+                <span class="section-duration">⏱ 45s</span>
+            </div>
+            <div class="script-text">But what if you could change all that? Today, we're exploring morning routines that let you have it all—business success and family harmony.</div>
+            <div class="direction-box">
+                <div class="direction-label">🎬 Visual Direction</div>
+                <div>Show a calm, organized morning scene: a parent smiling with kids and a tidy workspace.</div>
+            </div>
+            <div class="broll-box">
+                <div class="direction-label">📹 B-Roll</div>
+                <div>Footage of a serene breakfast, a neat desk, and kids happily interacting with a parent.</div>
+            </div>
+        </div>
+        <div class="section-card">
+            <div class="section-header">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <span class="section-number">5</span>
+                    <div>
+                        <div class="section-title">Strategies for a Balanced Entrepreneurial Morning</div>
+                        <span class="section-type" style="background:#22c55e20;color:#22c55e;border:1px solid #22c55e40">main_points</span>
+                    </div>
+                </div>
+                <span class="section-duration">⏱ 3m 0s</span>
+            </div>
+            <div class="script-text">Let's dive into the strategies that successful parents use: <br>1. Prioritize and Schedule: Start by listing your top three priorities for both family and business each morning. <br>2. Involve the Kids: Turn morning tasks into family activities. <br>3. Time Blocks: Use focused time blocks to manage tasks efficiently. <br>4. Self-care: Don't forget to include a moment for yourself, like meditation or a quick workout.</div>
+            <div class="direction-box">
+                <div class="direction-label">🎬 Visual Direction</div>
+                <div>Bullet points appear on screen as they're discussed, with relevant footage for each strategy.</div>
+            </div>
+            <div class="broll-box">
+                <div class="direction-label">📹 B-Roll</div>
+                <div>Show a planner with priorities, a family doing morning chores together, a parent exercising briefly.</div>
+            </div>
+        </div>
+        <div class="section-card">
+            <div class="section-header">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <span class="section-number">6</span>
+                    <div>
+                        <div class="section-title">Real-Life Success Stories</div>
+                        <span class="section-type" style="background:#06b6d420;color:#06b6d4;border:1px solid #06b6d440">evidence</span>
+                    </div>
+                </div>
+                <span class="section-duration">⏱ 2m 0s</span>
+            </div>
+            <div class="script-text">Consider Jane, a tech entrepreneur and mother of two. By creating a structured morning routine, she not only increased her productivity but also found more joy in family moments. Similarly, Mark, who runs a growing startup, integrated his morning workouts with family walks, enhancing both his physical health and family bonds.</div>
+            <div class="direction-box">
+                <div class="direction-label">🎬 Visual Direction</div>
+                <div>Interviews with Jane and Mark, with clips of their morning routines.</div>
+            </div>
+            <div class="broll-box">
+                <div class="direction-label">📹 B-Roll</div>
+                <div>Footage of a family walking, a parent at a desk, and kids playing nearby.</div>
+            </div>
+        </div>
+        <div class="section-card">
+            <div class="section-header">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <span class="section-number">7</span>
+                    <div>
+                        <div class="section-title">Start Your Balanced Morning Tomorrow</div>
+                        <span class="section-type" style="background:#f59e0b20;color:#f59e0b;border:1px solid #f59e0b40">cta</span>
+                    </div>
+                </div>
+                <span class="section-duration">⏱ 30s</span>
+            </div>
+            <div class="script-text">Now it's your turn. Implement one change in your morning routine tomorrow, and watch how it transforms your day. Share your experience in the comments below!</div>
+            <div class="direction-box">
+                <div class="direction-label">🎬 Visual Direction</div>
+                <div>Encouraging text on screen with upbeat music, inviting viewers to share their stories.</div>
+            </div>
+            <div class="broll-box">
+                <div class="direction-label">📹 B-Roll</div>
+                <div>Animated text inviting comments and sharing experiences.</div>
+            </div>
+        </div>
+  </div>
+
+  <!-- SEO Package -->
+  <div class="section">
+    <div class="section-heading">SEO Package</div>
+    <div class="card">
+      <div class="seo-title">Mastering Mornings: Entrepreneur Parents' Secret Routines</div>
+      <p style="color:#64748b;font-size:12px;margin-bottom:12px">Title variants:</p>
+      <ul class="variants"><li>Morning Magic for Entrepreneur Parents</li><li>Secrets of Entrepreneur Parents' Morning Routines</li></ul>
+      <p class="seo-desc">Discover how successful entrepreneur parents balance their mornings with business and family. Transform your routine today!</p>
+      <div style="margin:12px 0;padding:14px;background:#0f172a;border-radius:8px">
+        <div class="tone-label">Thumbnail Concept</div>
+        <div style="color:#e2e8f0;font-size:14px">A split image: one side showing a chaotic morning with kids, the other a calm, organized desk setup.</div>
+        <div style="margin-top:8px;font-weight:700;color:#fbbf24;font-size:18px">
+          "Balance Business & Family"
+        </div>
+      </div>
+      <div class="tags"><span class="tag">entrepreneur</span> <span class="tag">morning routine</span> <span class="tag">parenting</span> <span class="tag">productivity</span> <span class="tag">family</span></div>
+    </div>
+  </div>
+
+  <!-- Tone Profile -->
+  <div class="section">
+    <div class="section-heading">Tone Profile</div>
+    <div class="card">
+      <div class="tone-grid">
+        <div class="tone-item">
+          <div class="tone-label">Style</div>
+          <div class="tone-value">Informative and Encouraging</div>
+        </div>
+        <div class="tone-item">
+          <div class="tone-label">Pacing</div>
+          <div class="tone-value">Moderate to Fast</div>
+        </div>
+        <div class="tone-item">
+          <div class="tone-label">Visual Style</div>
+          <div class="tone-value">Clean with Inspirational Fonts and Colors</div>
+        </div>
+        <div class="tone-item">
+          <div class="tone-label">Recommended Length</div>
+          <div class="tone-value">10-15 minutes</div>
+        </div>
+      </div>
+      <div style="margin-top:16px">
+        <div class="tone-label" style="margin-bottom:8px">Words to use</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="word-badge use">successful habits</span> <span class="word-badge use">boost productivity</span></div>
+      </div>
+      <div style="margin-top:12px">
+        <div class="tone-label" style="margin-bottom:8px">Words to avoid</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="word-badge avoid">lazy</span> <span class="word-badge avoid">boring</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Videos -->
+  <div class="section">
+    <div class="section-heading">Top Videos Analyzed</div>
+    <div class="card">
+      
+        <div class="video-row">
+            <a href="https://youtube.com/watch?v=Ybk63zjfSL8" target="_blank" class="video-title-link">
+                Own Your Morning: Powerful Daily Routine! | Routines of HIGHLY SUCCESSFUL People! | Warikoo Hindi
+            </a>
+            <div class="video-meta">
+                <span>📺 warikoo</span>
+                <span>👁 3,316,156 views</span>
+                <span>👍 73,383 likes</span>
+            </div>
+        </div>
+        <div class="video-row">
+            <a href="https://youtube.com/watch?v=HwWlcccRseQ" target="_blank" class="video-title-link">
+                4am Morning Routine | how to set your day up for success
+            </a>
+            <div class="video-meta">
+                <span>📺 Leana Deeb</span>
+                <span>👁 2,444,664 views</span>
+                <span>👍 76,048 likes</span>
+            </div>
+        </div>
+        <div class="video-row">
+            <a href="https://youtube.com/watch?v=0GjbIOS9Q90" target="_blank" class="video-title-link">
+                The Morning Routine That Can Change Your Life | Dr. Sweta Adatia | Raj Shamani Clips
+            </a>
+            <div class="video-meta">
+                <span>📺 Raj Shamani Clips</span>
+                <span>👁 2,360,184 views</span>
+                <span>👍 56,540 likes</span>
+            </div>
+        </div>
+        <div class="video-row">
+            <a href="https://youtube.com/watch?v=9pLk3OU6bOs" target="_blank" class="video-title-link">
+                This morning routine is scientifically proven to make you limitless.
+            </a>
+            <div class="video-meta">
+                <span>📺 SpoonFedStudy</span>
+                <span>👁 1,273,360 views</span>
+                <span>👍 55,124 likes</span>
+            </div>
+        </div>
+        <div class="video-row">
+            <a href="https://youtube.com/watch?v=eEirzGD525I" target="_blank" class="video-title-link">
+                Morning Rituals of an Entrepreneur
+            </a>
+            <div class="video-meta">
+                <span>📺 Valuetainment</span>
+                <span>👁 912,514 views</span>
+                <span>👍 27,303 likes</span>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Production Notes -->
+  <div class="section">
+    <div class="section-heading">Production Notes</div>
+    <div class="card">
+      <p style="color:#94a3b8;font-size:14px">Use natural lighting to create a warm, inviting atmosphere. Edit with quick cuts to maintain a fast-paced, engaging flow.</p>
+      <div style="margin-top:16px">
+        <div class="tone-label" style="margin-bottom:8px">Pattern Interrupt Moments</div>
+        <div style="padding:6px 0;border-bottom:1px solid #0f172a;font-size:13px;color:#64748b">• At 2:30 — cut to b-roll of a chaotic morning</div><div style="padding:6px 0;border-bottom:1px solid #0f172a;font-size:13px;color:#64748b">• At 5:00 — show a graphic of a time-blocked schedule</div>
+      </div>
+      <div style="margin-top:16px;padding:12px;background:#0f172a;border-radius:8px;
+                  border-left:3px solid #f59e0b">
+        <div class="tone-label">Rewatch Hook</div>
+        <div style="color:#fcd34d;font-size:14px">The open loop on how small changes can lead to a big transformation in balancing business and family life.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Generated by YouTube Research & Script Pipeline ·
+    June 10, 2026 at 01:09
+  </div>
+
+</div>
+</body>
+</html>

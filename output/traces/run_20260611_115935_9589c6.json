@@ -1,0 +1,114 @@
+{
+  "run_id": "run_20260611_115935_9589c6",
+  "niche": "ADHD productivity tips",
+  "status": "completed",
+  "started_at": "2026-06-11T11:59:35.470982",
+  "duration_seconds": 34.31,
+  "total_tokens_input": 16985,
+  "total_tokens_output": 1376,
+  "total_cost_usd": 0.1056,
+  "final_eval_score": 7,
+  "final_title": "ADHD at Work: Productivity Hacks for Different Professions",
+  "warnings": [],
+  "error": null,
+  "stages": [
+    {
+      "stage": "research",
+      "attempt": 1,
+      "started_at": "2026-06-11T11:59:35.470982",
+      "duration_seconds": 17.89,
+      "iterations": 5,
+      "tokens_input": 16985,
+      "tokens_output": 1376,
+      "cost_usd": 0.1056,
+      "eval_score": null,
+      "gate_decision": {
+        "gate": "niche_gate",
+        "action": "proceed",
+        "reason": "Research passed all quality checks",
+        "detail": "Score: 8/10 | Videos: 3 | Gaps: 3",
+        "opportunity_score": 8,
+        "videos_analyzed": 3,
+        "gaps_found": 3
+      },
+      "error": null,
+      "tool_calls": [
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "ADHD productivity tips",
+            "max_results": 10
+          },
+          "duration_ms": 419.1,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "search_youtube",
+          "input": {
+            "query": "ADHD productivity",
+            "max_results": 10
+          },
+          "duration_ms": 413.6,
+          "success": true,
+          "error": null,
+          "results_count": 10
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "Xp805f-j1VI"
+          },
+          "duration_ms": 942.5,
+          "success": true,
+          "error": null,
+          "chars_returned": 8015,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "OM0Xv0eVGtY"
+          },
+          "duration_ms": 890.7,
+          "success": true,
+          "error": null,
+          "chars_returned": 7758,
+          "saved_to_disk": true
+        },
+        {
+          "tool": "get_transcript",
+          "input": {
+            "video_id": "YLkOZhROvA4"
+          },
+          "duration_ms": 919.4,
+          "success": true,
+          "error": null,
+          "chars_returned": 5260,
+          "saved_to_disk": true
+        }
+      ]
+    },
+    {
+      "stage": "script",
+      "attempt": 1,
+      "started_at": "2026-06-11T11:59:53.359312",
+      "duration_seconds": 16.42,
+      "iterations": 0,
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cost_usd": 0.0,
+      "eval_score": 7,
+      "gate_decision": {
+        "gate": "script_gate",
+        "action": "proceed",
+        "reason": "Script score 7/10 meets threshold (6)",
+        "detail": "Script passed quality gate on attempt 1.",
+        "eval_score": 7
+      },
+      "error": null,
+      "tool_calls": []
+    }
+  ]
+}
